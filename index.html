@@ -76,7 +76,7 @@
         .hero {
             background: linear-gradient(135deg, #2B5B9E 0%, #1A365D 100%);
             color: var(--blanco);
-            min-height: 70vh;
+            min-height: 55vh;
             display: flex;
             align-items: center;
             text-align: center;
@@ -95,41 +95,11 @@
 
         .hero p {
             font-size: 18px;
-            margin-bottom: 30px;
             opacity: 0.9;
         }
 
-        .badge-experience {
-            background-color: var(--naranja-acento);
-            color: var(--blanco);
-            padding: 6px 15px;
-            border-radius: 20px;
-            font-size: 14px;
-            font-weight: bold;
-            display: inline-block;
-            margin-bottom: 20px;
-        }
-
-        .btn-cta {
-            background-color: var(--naranja-acento);
-            color: var(--blanco);
-            padding: 14px 35px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background 0.3s;
-            display: inline-block;
-            border: none;
-            font-size: 16px;
-        }
-
-        .btn-cta:hover {
-            background-color: #E06A00;
-            cursor: pointer;
-        }
-
         .services {
-            padding: 80px 20px;
+            padding: 60px 20px;
             max-width: 1200px;
             margin: 0 auto;
             text-align: center;
@@ -216,74 +186,55 @@
             color: var(--gris-oscuro);
         }
 
-        .contact {
-            padding: 80px 20px;
-            max-width: 1200px;
+        /* Sección de Cierre e Información Corporativa Unificada */
+        .corporate-footer {
+            background-color: var(--gris-oscuro);
+            color: var(--blanco);
+            padding: 60px 20px 40px 20px;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 700px;
             margin: 0 auto;
         }
 
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 40px;
-            align-items: start;
-        }
-
-        .info-box {
-            background-color: var(--blanco);
-            padding: 30px;
-            border-radius: 8px;
-            border-left: 5px solid var(--azul-principal);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
-
-        .info-box h3 {
-            color: var(--azul-principal);
-            margin-bottom: 15px;
-            font-size: 20px;
-        }
-
-        .info-item {
-            margin-bottom: 15px;
-            font-size: 16px;
-        }
-
-        .info-item strong {
-            color: var(--azul-principal);
-        }
-
-        .contact-form {
-            background-color: var(--gris-claro);
-            padding: 30px;
-            border-radius: 8px;
-        }
-
-        .form-group {
-            margin-bottom: 15px;
-            text-align: left;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-            font-size: 14px;
-        }
-
-        .form-group input, .form-group textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #CCCCCC;
-            border-radius: 4px;
-            font-size: 15px;
-        }
-
-        footer {
-            background-color: var(--gris-oscuro);
+        .footer-content h2 {
+            font-size: 28px;
             color: var(--blanco);
-            text-align: center;
-            padding: 25px 20px;
+            margin-bottom: 25px;
+        }
+
+        .footer-content h3 {
+            font-size: 20px;
+            color: #A0AEC0;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .footer-info-text {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .footer-info-text p {
+            margin-bottom: 10px;
+        }
+
+        .copyright-area {
+            border-top: 1px solid #4A5568;
+            padding-top: 25px;
             font-size: 14px;
+            opacity: 0.8;
+        }
+
+        .copyright-area span {
+            display: block;
+            margin-top: 5px;
+            font-size: 12px;
+            opacity: 0.6;
         }
 
         @media (max-width: 768px) {
@@ -316,10 +267,8 @@
     <!-- Inicio / Hero -->
     <section id="inicio" class="hero">
         <div class="hero-content">
-            <div class="badge-experience">Desde 2011 a su servicio</div>
             <h1>Distribución de Tecnología Mayorista y al Detal</h1>
             <p>Especialistas en dispositivos móviles, tablets y accesorios de última generación en Bogotá D.C.</p>
-            <a href="#contacto" class="btn-cta">Solicitar Cotización</a>
         </div>
     </section>
 
@@ -353,3 +302,34 @@
             </div>
             <div class="brand-item">
                 <img class="brand-logo" src="sony.png" alt="Sony">
+                <span class="brand-name">Sony</span>
+            </div>
+            <div class="brand-item">
+                <img class="brand-logo" src="oneplus.png" alt="OnePlus">
+                <span class="brand-name">OnePlus</span>
+            </div>
+            <div class="brand-item">
+                <img class="brand-logo" src="nothing.png" alt="Nothing">
+                <span class="brand-name">Nothing</span>
+            </div>
+            <div class="brand-item">
+                <img class="brand-logo" src="redmagic.png" alt="Redmagic">
+                <span class="brand-name">Nubia (Redmagic)</span>
+            </div>
+            <div class="brand-item">
+                <img class="brand-logo" src="xiaomi.png" alt="Xiaomi">
+                <span class="brand-name">Xiaomi</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Unificada: Información de Contacto Corporativo y Cierre -->
+    <footer id="contacto" class="corporate-footer">
+        <div class="footer-content">
+            <h2>Ponte en Contacto</h2>
+            <h3>Información Corporativa</h3>
+            
+            <div class="footer-info-text">
+                <p><strong>Razón Social:</strong> Soluciones M & R S.A.S.</p>
+                <p><strong>Dirección:</strong> KR 38 # 9-32 LC 260, Bogotá D.C. 111611, Colombia</p>
+                <p><strong>Correo Oficial:</strong> solucionesmyr.sas@gmail.com</p>
