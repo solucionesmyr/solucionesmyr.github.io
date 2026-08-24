@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluciones M & R S.A.S. | Tecnología y Celulares</title>
+    <style>
+        /* Variables de Paleta de Colores Corporativos */
+        :root {
+            --azul-principal: #2B5B9E;
+            --naranja-acento: #FF7B00;
+            --gris-oscuro: #2D3142;
+            --gris-claro: #F4F5F7;
+            --blanco: #FFFFFF;
+        }
+
+        /* Estilos Generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            color: var(--gris-oscuro);
+            line-height: 1.6;
+            background-color: var(--blanco);
+        }
+
+        /* Barra de Navegación */
+        header {
+            background-color: var(--blanco);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .logo-text {
+            font-size: 22px;
+            font-weight: bold;
+            color: var(--azul-principal);
+        }
+
+        .logo-text span {
+            color: var(--naranja-acento);
+            font-size: 14px;
+            display: block;
+            font-weight: normal;
+            margin-top: -4px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--gris-oscuro);
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav-menu a:hover {
+            color: var(--naranja-acento);
+        }
+
+        /* Sección de Bienvenida (Hero) */
+        .hero {
+            background: linear-gradient(135deg, #2B5B9E 0%, #1A365D 100%);
+            color: var(--blanco);
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding: 100px 20px 60px 20px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .badge-experience {
+            background-color: var(--naranja-acento);
+            color: var(--blanco);
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .btn-cta {
+            background-color: var(--naranja-acento);
+            color: var(--blanco);
+            padding: 14px 35px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+            display: inline-block;
+        }
+
+        .btn-cta:hover {
+            background-color: #E06A00;
+        }
+
+        /* Sección Servicios */
+        .services {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 40px;
+            color: var(--azul-principal);
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--naranja-acento);
+            margin: 10px auto 0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background-color: var(--gris-claro);
+            padding: 40px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .service-card h3 {
+            margin-bottom: 15px;
+            color: var(--azul-principal);
+            font-size: 22px;
+        }
+
+        /* Sección de Marcas Aliadas */
+        .brands-section {
+            background-color: var(--gris-claro);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .brands-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding-top: 20px;
+        }
+
+        .brand-logo {
+            height: 45px;
+            max-width: 130px;
+            object-fit: contain;
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+
+        .brand-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+            transform: scale(1.08);
+        }
+
+        /* Sección Contacto e Información */
+        .contact {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            align-items: start;
+        }
+
+        .info-box {
+            background-color: var(--blanco);
+            padding: 30px;
+            border-radius: 8px;
+            border-left: 5px solid var(--azul-principal);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .info-box h3 {
+            color: var(--azul-principal);
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .info-item {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .info-item strong {
+            color: var(--azul-principal);
+        }
+
+        .contact-form {
+            background-color: var(--gris-claro);
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #CCCCCC;
+            border-radius: 4px;
+            font-size: 15px;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: var(--gris-oscuro);
+            color: var(--blanco);
+            text-align: center;
+            padding: 25px 20px;
+            font-size: 14px;
+        }
+
+        /* Adaptabilidad Móvil */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 32px; }
+            .hero p { font-size: 16px; }
+            .nav-menu { display: none; } /* Oculto en móvil por simplicidad */
+            .brands-container { gap: 25px; }
+            .brand-logo { height: 35px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="nav-container">
+            <div class="logo-text">SOLUCIONES M & R S.A.S. <span>tecnología</span></div>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#marcas">Marcas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Inicio / Hero -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <div class="badge-experience">Desde 2011 a su servicio</div>
+            <h1>Distribución de Tecnología Mayorista y al Detal</h1>
+            <p>Especialistas en dispositivos móviles, tablets y accesorios de última generación en Bogotá D.C.</p>
+            <a href="#contacto" class="btn-cta">Solicitar Cotización</a>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="services">
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Venta al por Mayor</h3>
+                <p>Abastecemos tu negocio con un catálogo amplio de dispositivos tecnológicos y accesorios con precios competitivos por volumen.</p>
+            </div>
+            <div class="service-card">
+                <h3>Venta al Detal</h3>
+                <p>Ofrecemos los últimos lanzamientos del mercado móvil directamente al consumidor final con garantía y asesoría experta.</p>
+            </div>
+            <div class="service-card">
+                <h3>Dispositivos y Accesorios</h3>
+                <p>Contamos con stock disponible de celulares de alta gama, tablets de rendimiento optimizado y accesorios complementarios indispensables.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marcas Disponibles -->
+    <section id="marcas" class="brands-section">
+        <h2 class="section-title">Marcas Disponibles</h2>
+        <p style="margin-bottom: 20px; opacity: 0.8;">Distribuimos tecnología móvil de marcas líderes mundiales:</p>
+        <div class="brands-container">
+            <!-- Logos oficiales desde CDN público con respaldo visual de texto -->
+            <img class="brand-logo" src="https://wikimedia.org" alt="Google">
+            <img class="brand-logo" src="https://wikimedia.org" alt="Sony">
