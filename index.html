@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soluciones M & R S.A.S. | Tecnología y Celulares</title>
     <style>
-        /* Variables de Paleta de Colores Corporativos */
         :root {
             --azul-principal: #2B5B9E;
             --naranja-acento: #FF7B00;
@@ -14,7 +13,6 @@
             --blanco: #FFFFFF;
         }
 
-        /* Estilos Generales */
         * {
             margin: 0;
             padding: 0;
@@ -29,7 +27,6 @@
             background-color: var(--blanco);
         }
 
-        /* Barra de Navegación */
         header {
             background-color: var(--blanco);
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -51,7 +48,6 @@
         .logo-container {
             display: flex;
             align-items: center;
-            gap: 10px;
         }
 
         .logo-img {
@@ -77,11 +73,10 @@
             color: var(--naranja-acento);
         }
 
-        /* Sección de Bienvenida (Hero) */
         .hero {
             background: linear-gradient(135deg, #2B5B9E 0%, #1A365D 100%);
             color: var(--blanco);
-            min-height: 75vh;
+            min-height: 70vh;
             display: flex;
             align-items: center;
             text-align: center;
@@ -122,17 +117,17 @@
             text-decoration: none;
             border-radius: 5px;
             font-weight: bold;
-            transition: background 0.3s, transform 0.2s;
+            transition: background 0.3s;
             display: inline-block;
             border: none;
+            font-size: 16px;
         }
 
         .btn-cta:hover {
             background-color: #E06A00;
-            transform: translateY(-2px);
+            cursor: pointer;
         }
 
-        /* Sección Servicios */
         .services {
             padding: 80px 20px;
             max-width: 1200px;
@@ -174,7 +169,6 @@
             font-size: 22px;
         }
 
-        /* Sección de Marcas Aliadas */
         .brands-section {
             background-color: var(--gris-claro);
             padding: 60px 20px;
@@ -182,40 +176,46 @@
         }
 
         .brands-container {
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 0 auto;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            gap: 50px;
+            gap: 40px;
             padding-top: 20px;
         }
 
-        .brand-wrapper {
-            height: 60px;
-            width: 140px;
+        .brand-item {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
+            gap: 8px;
+            background: var(--blanco);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            min-width: 140px;
         }
 
         .brand-logo {
-            max-height: 100%;
-            max-width: 100%;
+            height: 50px;
+            width: auto;
+            max-width: 120px;
             object-fit: contain;
-            filter: grayscale(100%);
-            opacity: 0.6;
             transition: all 0.3s ease;
         }
 
-        .brand-logo:hover {
-            filter: grayscale(0%);
-            opacity: 1;
+        .brand-item:hover .brand-logo {
             transform: scale(1.1);
         }
 
-        /* Sección Contacto e Información */
+        .brand-name {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--gris-oscuro);
+        }
+
         .contact {
             padding: 80px 20px;
             max-width: 1200px;
@@ -278,7 +278,6 @@
             font-size: 15px;
         }
 
-        /* Pie de página */
         footer {
             background-color: var(--gris-oscuro);
             color: var(--blanco);
@@ -287,13 +286,13 @@
             font-size: 14px;
         }
 
-        /* Adaptabilidad Móvil */
         @media (max-width: 768px) {
             .hero h1 { font-size: 32px; }
             .hero p { font-size: 16px; }
             .nav-menu { display: none; }
-            .brands-container { gap: 30px; }
-            .brand-wrapper { width: 110px; height: 45px; }
+            .brands-container { gap: 20px; }
+            .brand-item { min-width: 120px; padding: 10px; }
+            .brand-logo { height: 40px; }
         }
     </style>
 </head>
@@ -303,7 +302,6 @@
     <header>
         <div class="nav-container">
             <div class="logo-container">
-                <!-- Llama al logo subido en la raíz de tu repositorio -->
                 <img src="logo.png" alt="Soluciones M & R S.A.S." class="logo-img">
             </div>
             <ul class="nav-menu">
@@ -347,6 +345,11 @@
     <!-- Marcas Disponibles -->
     <section id="marcas" class="brands-section">
         <h2 class="section-title">Marcas Disponibles</h2>
-        <p style="margin-bottom: 25px; opacity: 0.8;">Distribuimos tecnología móvil de marcas líderes mundiales:</p>
+        <p style="margin-bottom: 30px; opacity: 0.8;">Distribuimos tecnología móvil de marcas líderes mundiales:</p>
         <div class="brands-container">
-            <div class="brand-wrapper">
+            <div class="brand-item">
+                <img class="brand-logo" src="google.png" alt="Google">
+                <span class="brand-name">Google</span>
+            </div>
+            <div class="brand-item">
+                <img class="brand-logo" src="sony.png" alt="Sony">
