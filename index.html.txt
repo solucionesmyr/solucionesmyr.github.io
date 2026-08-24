@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soluciones M & R S.A.S. | Tecnología y Celulares</title>
     <style>
-        /* Variables de Paleta de Colores Corporativos */
         :root {
             --azul-principal: #2B5B9E;
             --naranja-acento: #FF7B00;
@@ -14,7 +13,6 @@
             --blanco: #FFFFFF;
         }
 
-        /* Estilos Generales */
         * {
             margin: 0;
             padding: 0;
@@ -29,7 +27,6 @@
             background-color: var(--blanco);
         }
 
-        /* Barra de Navegación */
         header {
             background-color: var(--blanco);
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -79,7 +76,6 @@
             color: var(--naranja-acento);
         }
 
-        /* Sección de Bienvenida (Hero) */
         .hero {
             background: linear-gradient(135deg, #2B5B9E 0%, #1A365D 100%);
             color: var(--blanco);
@@ -132,7 +128,6 @@
             background-color: #E06A00;
         }
 
-        /* Sección Servicios */
         .services {
             padding: 80px 20px;
             max-width: 1200px;
@@ -174,7 +169,6 @@
             font-size: 22px;
         }
 
-        /* Sección de Marcas Aliadas */
         .brands-section {
             background-color: var(--gris-claro);
             padding: 60px 20px;
@@ -207,7 +201,6 @@
             transform: scale(1.08);
         }
 
-        /* Sección Contacto e Información */
         .contact {
             padding: 80px 20px;
             max-width: 1200px;
@@ -270,7 +263,6 @@
             font-size: 15px;
         }
 
-        /* Pie de página */
         footer {
             background-color: var(--gris-oscuro);
             color: var(--blanco);
@@ -279,11 +271,10 @@
             font-size: 14px;
         }
 
-        /* Adaptabilidad Móvil */
         @media (max-width: 768px) {
             .hero h1 { font-size: 32px; }
             .hero p { font-size: 16px; }
-            .nav-menu { display: none; } /* Oculto en móvil por simplicidad */
+            .nav-menu { display: none; }
             .brands-container { gap: 25px; }
             .brand-logo { height: 35px; }
         }
@@ -291,7 +282,6 @@
 </head>
 <body>
 
-    <!-- Encabezado -->
     <header>
         <div class="nav-container">
             <div class="logo-text">SOLUCIONES M & R S.A.S. <span>tecnología</span></div>
@@ -304,7 +294,6 @@
         </div>
     </header>
 
-    <!-- Inicio / Hero -->
     <section id="inicio" class="hero">
         <div class="hero-content">
             <div class="badge-experience">Desde 2011 a su servicio</div>
@@ -314,7 +303,6 @@
         </div>
     </section>
 
-    <!-- Servicios -->
     <section id="servicios" class="services">
         <h2 class="section-title">Nuestros Servicios</h2>
         <div class="services-grid">
@@ -333,11 +321,17 @@
         </div>
     </section>
 
-    <!-- Marcas Disponibles -->
     <section id="marcas" class="brands-section">
         <h2 class="section-title">Marcas Disponibles</h2>
         <p style="margin-bottom: 20px; opacity: 0.8;">Distribuimos tecnología móvil de marcas líderes mundiales:</p>
         <div class="brands-container">
-            <!-- Logos oficiales desde CDN público con respaldo visual de texto -->
             <img class="brand-logo" src="https://wikimedia.org" alt="Google">
             <img class="brand-logo" src="https://wikimedia.org" alt="Sony">
+            <img class="brand-logo" src="https://wikimedia.org" alt="Xiaomi">
+            <img class="brand-logo" src="https://wikimedia.org" alt="OnePlus">
+            <img class="brand-logo" src="https://wikimedia.org" alt="Nothing">
+            <img class="brand-logo" src="https://wikimedia.org" alt="Nubia Redmagic">
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
