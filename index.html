@@ -3,341 +3,692 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soluciones M & R S.A.S. | Tecnología y Celulares</title>
+    <title>Soluciones M & R S.A.S. | Distribución Tecnológica y Telefonía</title>
+    
+    <!-- Favicon e Íconos corporativos -->
+    <link rel="icon" type="image/svg+xml" href="logo-icono (1).svg">
+    <link rel="apple-touch-icon" href="logo-icono-192.png">
+
+    <!-- Tipografía Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <style>
-        /* Variables de Paleta de Colores Corporativos */
         :root {
-            --azul-principal: #2B5B9E;
-            --naranja-acento: #FF7B00;
-            --gris-oscuro: #2D3142;
-            --gris-claro: #F4F5F7;
+            --azul-principal: #162E58;
+            --azul-profundo: #091326;
+            --cyan-neon: #00A7C4;
+            --cyan-glow: rgba(0, 167, 196, 0.25);
+            --texto-principal: #0F172A;
+            --texto-secundario: #475569;
+            --fondo-gris: #F8FAFC;
             --blanco: #FFFFFF;
+            --borde-tarjeta: rgba(226, 232, 240, 0.8);
+            --sombra-premium: 0 20px 40px -15px rgba(22, 46, 88, 0.08);
         }
 
-        /* Estilos Generales */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Plus Jakarta Sans', sans-serif;
             scroll-behavior: smooth;
         }
 
-        body {
-            color: var(--gris-oscuro);
-            line-height: 1.6;
-            background-color: var(--blanco);
+        h1, h2, h3, .heading-font {
+            font-family: 'Space Grotesk', sans-serif;
         }
 
-        /* Barra de Navegación */
+        body {
+            color: var(--texto-principal);
+            background-color: #FFFFFF;
+            overflow-x: hidden;
+        }
+
+        /* --- Header Futurista --- */
         header {
-            background-color: var(--blanco);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--borde-tarjeta);
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
+            transition: all 0.3s;
         }
 
         .nav-container {
-            max-width: 1200px;
+            max-width: 1280px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 20px;
+            padding: 16px 24px;
         }
 
-        .logo-text {
-            font-size: 22px;
-            font-weight: bold;
-            color: var(--azul-principal);
-        }
-
-        .logo-text span {
-            color: var(--naranja-acento);
-            font-size: 14px;
+        .brand-logo-header {
+            height: 46px;
+            width: auto;
             display: block;
-            font-weight: normal;
-            margin-top: -4px;
         }
 
         .nav-menu {
             display: flex;
             list-style: none;
-            gap: 25px;
+            gap: 36px;
+            align-items: center;
         }
 
         .nav-menu a {
             text-decoration: none;
-            color: var(--gris-oscuro);
+            color: var(--azul-principal);
             font-weight: 600;
-            transition: color 0.3s;
+            font-size: 15px;
+            transition: color 0.2s;
         }
 
         .nav-menu a:hover {
-            color: var(--naranja-acento);
+            color: var(--cyan-neon);
         }
 
-        /* Sección de Bienvenida (Hero) */
+        .btn-header-cta {
+            background-color: var(--cyan-neon);
+            color: var(--blanco) !important;
+            padding: 10px 22px;
+            border-radius: 50px;
+            box-shadow: 0 4px 15px var(--cyan-glow);
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .btn-header-cta:hover {
+            transform: translateY(-2px);
+            background-color: #0088A1;
+        }
+
+        /* --- Hero Section Avanzado --- */
         .hero {
-            background: linear-gradient(135deg, #2B5B9E 0%, #1A365D 100%);
+            background: radial-gradient(circle at 80% 20%, #1a396d 0%, var(--azul-profundo) 100%);
             color: var(--blanco);
-            min-height: 70vh;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            padding: 100px 20px 60px 20px;
+            padding: 180px 24px 100px 24px;
+            position: relative;
+            overflow: hidden;
         }
 
-        .hero-content {
-            max-width: 800px;
+        .hero-glow {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: var(--cyan-glow);
+            filter: blur(120px);
+            border-radius: 50%;
+            top: -100px;
+            right: -100px;
+            pointer-events: none;
+        }
+
+        .hero-container {
+            max-width: 1280px;
             margin: 0 auto;
-        }
-
-        .hero h1 {
-            font-size: 42px;
-            margin-bottom: 15px;
-        }
-
-        .hero p {
-            font-size: 18px;
-            margin-bottom: 30px;
-            opacity: 0.9;
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 60px;
+            align-items: center;
         }
 
         .badge-experience {
-            background-color: var(--naranja-acento);
-            color: var(--blanco);
-            padding: 6px 15px;
-            border-radius: 20px;
-            font-size: 14px;
-            font-weight: bold;
+            background: rgba(0, 167, 196, 0.12);
+            border: 1px solid var(--cyan-neon);
+            color: var(--cyan-neon);
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
             display: inline-block;
-            margin-bottom: 20px;
+            margin-bottom: 24px;
         }
 
-        .btn-cta {
-            background-color: var(--naranja-acento);
-            color: var(--blanco);
-            padding: 14px 35px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: background 0.3s;
-            display: inline-block;
+        .hero h1 {
+            font-size: 54px;
+            line-height: 1.1;
+            margin-bottom: 24px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #FFFFFF 60%, #94A3B8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
-        .btn-cta:hover {
-            background-color: #E06A00;
-        }
-
-        /* Sección Servicios */
-        .services {
-            padding: 80px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .section-title {
-            font-size: 32px;
+        .hero p {
+            font-size: 19px;
+            color: #94A3B8;
             margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .btn-primary {
+            background-color: var(--cyan-neon);
+            color: var(--blanco);
+            padding: 16px 36px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            box-shadow: 0 10px 25px var(--cyan-glow);
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(0, 167, 196, 0.4);
+        }
+
+        .btn-secondary {
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--blanco);
+            padding: 16px 32px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: var(--blanco);
+        }
+
+        .hero-card-preview {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border-radius: 24px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+        }
+
+        .hero-card-preview img {
+            max-width: 180px;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 10px 20px rgba(0,167,196,0.3));
+        }
+
+        /* --- Métricas / Stats --- */
+        .stats-section {
+            background-color: var(--blanco);
+            margin-top: -50px;
+            position: relative;
+            z-index: 10;
+            max-width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;
+            box-shadow: var(--sombra-premium);
+            border: 1px solid var(--borde-tarjeta);
+            padding: 35px 20px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            text-align: center;
+            divide-x: 1px solid var(--borde-tarjeta);
+        }
+
+        .stat-number {
+            font-size: 38px;
+            font-weight: 700;
             color: var(--azul-principal);
         }
 
-        .section-title::after {
-            content: '';
+        .stat-label {
+            font-size: 14px;
+            color: var(--texto-secundario);
+            font-weight: 500;
+            margin-top: 4px;
+        }
+
+        /* --- Sección Servicios Interactiva --- */
+        .services {
+            padding: 120px 24px 80px 24px;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 60px auto;
+        }
+
+        .section-tag {
+            color: var(--cyan-neon);
+            font-weight: 700;
+            font-size: 13px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
             display: block;
-            width: 60px;
-            height: 4px;
-            background-color: var(--naranja-acento);
-            margin: 10px auto 0;
+        }
+
+        .section-title {
+            font-size: 38px;
+            color: var(--azul-principal);
+            font-weight: 700;
         }
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 32px;
         }
 
         .service-card {
-            background-color: var(--gris-claro);
-            padding: 40px 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            background: var(--blanco);
+            border: 1px solid var(--borde-tarjeta);
+            border-radius: 20px;
+            padding: 40px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--sombra-premium);
+            border-color: var(--cyan-neon);
+        }
+
+        .service-icon-wrapper {
+            width: 60px;
+            height: 60px;
+            background: var(--fondo-gris);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            color: var(--cyan-neon);
+            margin-bottom: 24px;
+            font-weight: bold;
         }
 
         .service-card h3 {
-            margin-bottom: 15px;
-            color: var(--azul-principal);
             font-size: 22px;
+            color: var(--azul-principal);
+            margin-bottom: 14px;
         }
 
-        /* Sección de Marcas Aliadas */
+        .service-card p {
+            color: var(--texto-secundario);
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        /* --- Carrusel Continuo de Marcas --- */
         .brands-section {
-            background-color: var(--gris-claro);
-            padding: 60px 20px;
-            text-align: center;
+            background-color: var(--fondo-gris);
+            padding: 80px 0;
+            overflow: hidden;
+            border-top: 1px solid var(--borde-tarjeta);
+            border-bottom: 1px solid var(--borde-tarjeta);
         }
 
-        .brands-container {
-            max-width: 1000px;
-            margin: 0 auto;
+        .marquee {
             display: flex;
-            justify-content: center;
+            width: 200%;
+            animation: marquee 25s linear infinite;
+        }
+
+        .marquee-content {
+            display: flex;
+            justify-content: space-around;
+            width: 50%;
             align-items: center;
-            flex-wrap: wrap;
-            gap: 40px;
-            padding-top: 20px;
+            gap: 60px;
         }
 
         .brand-logo {
-            height: 45px;
-            max-width: 130px;
+            height: 42px;
+            max-width: 150px;
             object-fit: contain;
             filter: grayscale(100%);
-            opacity: 0.7;
-            transition: all 0.3s ease;
+            opacity: 0.5;
+            transition: all 0.3s;
         }
 
         .brand-logo:hover {
             filter: grayscale(0%);
             opacity: 1;
-            transform: scale(1.08);
+            transform: scale(1.1);
         }
 
-        /* Sección Contacto e Información */
+        @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+        }
+
+        /* --- Contacto / Tarjeta Corporativa --- */
         .contact {
-            padding: 80px 20px;
-            max-width: 1200px;
+            padding: 100px 24px;
+            max-width: 1280px;
             margin: 0 auto;
         }
 
-        .contact-grid {
+        .contact-card-wrapper {
+            background: linear-gradient(135deg, var(--azul-principal) 0%, var(--azul-profundo) 100%);
+            border-radius: 28px;
+            padding: 60px;
+            color: var(--blanco);
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 40px;
-            align-items: start;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.25);
         }
 
-        .info-box {
-            background-color: var(--blanco);
-            padding: 30px;
-            border-radius: 8px;
-            border-left: 5px solid var(--azul-principal);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        .contact-info h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
         }
 
-        .info-box h3 {
+        .contact-info p {
+            color: #94A3B8;
+            margin-bottom: 30px;
+        }
+
+        .info-item-group {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .info-pill {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 16px 20px;
+            border-radius: 12px;
+        }
+
+        .info-pill span {
+            display: block;
+            font-size: 12px;
+            color: var(--cyan-neon);
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 2px;
+        }
+
+        .info-pill p {
+            color: var(--blanco);
+            margin: 0;
+            font-weight: 600;
+        }
+
+        .contact-form-card {
+            background: var(--blanco);
+            border-radius: 20px;
+            padding: 40px;
+            color: var(--texto-principal);
+        }
+
+        .contact-form-card h3 {
+            font-size: 22px;
             color: var(--azul-principal);
-            margin-bottom: 15px;
-            font-size: 20px;
-        }
-
-        .info-item {
-            margin-bottom: 15px;
-            font-size: 16px;
-        }
-
-        .info-item strong {
-            color: var(--azul-principal);
-        }
-
-        .contact-form {
-            background-color: var(--gris-claro);
-            padding: 30px;
-            border-radius: 8px;
+            margin-bottom: 20px;
         }
 
         .form-group {
-            margin-bottom: 15px;
-            text-align: left;
+            margin-bottom: 18px;
         }
 
         .form-group label {
             display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-            font-size: 14px;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: var(--azul-principal);
         }
 
         .form-group input, .form-group textarea {
             width: 100%;
-            padding: 12px;
-            border: 1px solid #CCCCCC;
-            border-radius: 4px;
-            font-size: 15px;
-        }
-
-        /* Pie de página */
-        footer {
-            background-color: var(--gris-oscuro);
-            color: var(--blanco);
-            text-align: center;
-            padding: 25px 20px;
+            padding: 14px;
+            border: 1px solid var(--borde-tarjeta);
+            border-radius: 10px;
             font-size: 14px;
+            outline: none;
+            transition: border-color 0.2s;
         }
 
-        /* Adaptabilidad Móvil */
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 32px; }
-            .hero p { font-size: 16px; }
-            .nav-menu { display: none; } /* Oculto en móvil por simplicidad */
-            .brands-container { gap: 25px; }
-            .brand-logo { height: 35px; }
+        .form-group input:focus, .form-group textarea:focus {
+            border-color: var(--cyan-neon);
+        }
+
+        .btn-submit {
+            width: 100%;
+            background-color: var(--cyan-neon);
+            color: var(--blanco);
+            border: none;
+            padding: 16px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .btn-submit:hover {
+            background-color: #0088A1;
+        }
+
+        /* Botón Flotante WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+            text-decoration: none;
+            z-index: 1000;
+            transition: transform 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background: var(--azul-profundo);
+            color: #64748B;
+            text-align: center;
+            padding: 40px 24px;
+            font-size: 14px;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 900px) {
+            .hero-container, .contact-card-wrapper { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 38px; }
+            .hero-card-preview { display: none; }
+            .stats-grid { grid-template-columns: 1fr; row-gap: 20px; }
+            .nav-menu { display: none; }
         }
     </style>
 </head>
 <body>
 
-    <!-- Encabezado -->
+    <!-- Header / Menú de Navegación -->
     <header>
         <div class="nav-container">
-            <div class="logo-text">SOLUCIONES M & R S.A.S. <span>tecnología</span></div>
+            <a href="#inicio">
+                <img src="logo-horizontal (1).svg" alt="Soluciones M & R S.A.S." class="brand-logo-header">
+            </a>
             <ul class="nav-menu">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#marcas">Marcas</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#contacto" class="btn-header-cta">Cotizar</a></li>
             </ul>
         </div>
     </header>
 
-    <!-- Inicio / Hero -->
+    <!-- Hero Section Futurista -->
     <section id="inicio" class="hero">
-        <div class="hero-content">
-            <div class="badge-experience">Desde 2011 a su servicio</div>
-            <h1>Distribución de Tecnología Mayorista y al Detal</h1>
-            <p>Especialistas en dispositivos móviles, tablets y accesorios de última generación en Bogotá D.C.</p>
-            <a href="#contacto" class="btn-cta">Solicitar Cotización</a>
+        <div class="hero-glow"></div>
+        <div class="hero-container">
+            <div>
+                <span class="badge-experience">Trayectoria Corporativa Desde 2011</span>
+                <h1>Distribución Tecnológica de Alta Gama</h1>
+                <p>Especialistas en la importación y mayorismo de movilidad, tablets y dispositivos de vanguardia en Colombia.</p>
+                <div class="hero-buttons">
+                    <a href="#contacto" class="btn-primary">Solicitar Catálogo</a>
+                    <a href="#servicios" class="btn-secondary">Explorar Servicios</a>
+                </div>
+            </div>
+            <div class="hero-card-preview">
+                <img src="logo-icono (1).svg" alt="Soluciones M & R">
+                <h3 style="color: white; font-size: 20px;">Soluciones M & R S.A.S.</h3>
+                <p style="color: #94A3B8; font-size: 14px; margin: 0;">Socio estratégico en telefonía móvil</p>
+            </div>
         </div>
     </section>
 
-    <!-- Servicios -->
+    <!-- Tarjeta de Métricas / Stats -->
+    <div class="stats-section">
+        <div class="stats-grid">
+            <div>
+                <div class="stat-number">+13</div>
+                <div class="stat-label">Años de Trayectoria</div>
+            </div>
+            <div>
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Garantía Directa</div>
+            </div>
+            <div>
+                <div class="stat-number">Nacional</div>
+                <div class="stat-label">Cobertura de Envíos</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Servicios con Tarjetas Elevadas -->
     <section id="servicios" class="services">
-        <h2 class="section-title">Nuestros Servicios</h2>
+        <div class="section-header">
+            <span class="section-tag">Nuestras Soluciones</span>
+            <h2 class="section-title">Infraestructura y Distribución</h2>
+        </div>
+
         <div class="services-grid">
             <div class="service-card">
-                <h3>Venta al por Mayor</h3>
-                <p>Abastecemos tu negocio con un catálogo amplio de dispositivos tecnológicos y accesorios con precios competitivos por volumen.</p>
+                <div class="service-icon-wrapper">📦</div>
+                <h3>Distribución al por Mayor</h3>
+                <p>Abastecimiento masivo para canales comerciales y distribuidores regionales con tarifas mayoristas preferenciales.</p>
             </div>
             <div class="service-card">
-                <h3>Venta al Detal</h3>
-                <p>Ofrecemos los últimos lanzamientos del mercado móvil directamente al consumidor final con garantía y asesoría experta.</p>
+                <div class="service-icon-wrapper">📱</div>
+                <h3>Venta Corporativa y Detal</h3>
+                <p>Atención personalizada para compras empresariales o usuarios finales que buscan dispositivos homologados de última generación.</p>
             </div>
             <div class="service-card">
-                <h3>Dispositivos y Accesorios</h3>
-                <p>Contamos con stock disponible de celulares de alta gama, tablets de rendimiento optimizado y accesorios complementarios indispensables.</p>
+                <div class="service-icon-wrapper">⚡</div>
+                <h3>Ecosistema de Accesorios</h3>
+                <p>Complementos originales de alto rendimiento, componentes y accesorios indispensables para optimizar tu portafolio.</p>
             </div>
         </div>
     </section>
 
-    <!-- Marcas Disponibles -->
+    <!-- Carrusel Continuo de Marcas Aliadas -->
     <section id="marcas" class="brands-section">
-        <h2 class="section-title">Marcas Disponibles</h2>
-        <p style="margin-bottom: 20px; opacity: 0.8;">Distribuimos tecnología móvil de marcas líderes mundiales:</p>
-        <div class="brands-container">
-            <!-- Logos oficiales desde CDN público con respaldo visual de texto -->
-            <img class="brand-logo" src="https://wikimedia.org" alt="Google">
-            <img class="brand-logo" src="https://wikimedia.org" alt="Sony">
+        <div class="marquee">
+            <div class="marquee-content">
+                <img class="brand-logo" src="xiaomi.png" alt="Xiaomi">
+                <img class="brand-logo" src="oneplus.png" alt="OnePlus">
+                <img class="brand-logo" src="redmagic.png" alt="RedMagic">
+                <img class="brand-logo" src="nothing.png" alt="Nothing">
+                <img class="brand-logo" src="sony.jpg" alt="Sony">
+                <img class="brand-logo" src="google.png" alt="Google">
+            </div>
+            <div class="marquee-content">
+                <img class="brand-logo" src="xiaomi.png" alt="Xiaomi">
+                <img class="brand-logo" src="oneplus.png" alt="OnePlus">
+                <img class="brand-logo" src="redmagic.png" alt="RedMagic">
+                <img class="brand-logo" src="nothing.png" alt="Nothing">
+                <img class="brand-logo" src="sony.jpg" alt="Sony">
+                <img class="brand-logo" src="google.png" alt="Google">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto con Tarjeta Oscura de Contraste -->
+    <section id="contacto" class="contact">
+        <div class="contact-card-wrapper">
+            <div class="contact-info">
+                <h2>Conectemos tu Negocio</h2>
+                <p>Asesoría inmediata y gestión comercial directa con nuestro equipo técnico.</p>
+                
+                <div class="info-item-group">
+                    <div class="info-pill">
+                        <span>Razón Social</span>
+                        <p>Soluciones M & R S.A.S.</p>
+                    </div>
+                    <div class="info-pill">
+                        <span>NIT</span>
+                        <p>900.449.188-9</p>
+                    </div>
+                    <div class="info-pill">
+                        <span>Atención Telefónica</span>
+                        <p>+57 350 547 5065</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-card">
+                <h3>Enviar Solicitud</h3>
+                <form action="https://formsubmit.co/solucionesmyr.sas@gmail.com" method="POST">
+                    <div class="form-group">
+                        <label>Nombre o Razón Social</label>
+                        <input type="text" name="name" placeholder="Tu nombre o empresa" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Correo Electrónico</label>
+                        <input type="email" name="email" placeholder="correo@ejemplo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Requerimiento / Dispositivo de Interés</label>
+                        <textarea name="message" rows="3" placeholder="Detalla qué dispositivos o servicios necesitas..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar Cotización</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botón Flotante Directo de WhatsApp -->
+    <a href="https://wa.me/573505475065?text=Hola,%20quisiera%20solicitar%20una%20cotización%20en%20Soluciones%20M%20&%20R" class="whatsapp-float" target="_blank" title="Contactar por WhatsApp">
+        💬
+    </a>
+
+    <!-- Footer Corporativo -->
+    <footer>
+        <p>&copy; 2026 Soluciones M & R S.A.S. — Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
