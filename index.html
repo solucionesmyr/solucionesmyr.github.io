@@ -1,1066 +1,495 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HPhones | Celulares y accesorios al por mayor y al detal</title>
-<meta name="description" content="HPhones: celulares y accesorios Apple, Google, OnePlus, RedMagic, Sony, Nothing y Xiaomi al por mayor y al detal en Colombia.">
-<link rel="icon" href="/favicon.ico?v=2" sizes="any">
-<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png?v=2">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
-<link rel="manifest" href="/site.webmanifest?v=2">
-<link rel="canonical" href="https://hphones.net/">
-<meta name="robots" content="index, follow">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="HPhones">
-<meta property="og:title" content="HPhones | Celulares y accesorios al por mayor y al detal">
-<meta property="og:description" content="Celulares y accesorios Apple, Google, OnePlus, RedMagic, Sony, Nothing y Xiaomi en Colombia.">
-<meta property="og:url" content="https://hphones.net/">
-<meta property="og:image" content="https://hphones.net/icon-512.png">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"HPhones","url":"https://hphones.net/","logo":"https://hphones.net/icon-512.png","sameAs":["https://www.instagram.com/hphones.store/","https://www.facebook.com/hphones.com.co/"]}
-</script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","name":"HPhones","alternateName":["HPhones.net","H Phones"],"url":"https://hphones.net/"}
-</script>
-<meta name="theme-color" content="#06323a">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<style>
-:root{
-  --teal-900:#06323a; --teal-800:#0a434d; --teal-700:#0d5561; --teal-600:#136a78;
-  --cyan:#12d6e6; --coral:#f4896b; --coral-d:#e0704f; --sand:#f3e4d3;
-  --ink:#eaf7f8; --muted:#9fc3c8; --card:#0c4a55; --line:rgba(255,255,255,.1);
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:'Montserrat',system-ui,sans-serif;background:var(--teal-900);color:var(--ink);line-height:1.6}
-img,svg{max-width:100%;display:block}
-a{color:inherit;text-decoration:none}
-.wrap{width:min(1160px,100% - 40px);margin-inline:auto}
-section{padding:84px 0}
-h1,h2,h3{line-height:1.15;letter-spacing:-.01em}
-h2{font-size:clamp(1.8rem,3.4vw,2.6rem);font-weight:800}
-.eyebrow{display:inline-block;color:var(--coral);font-weight:700;letter-spacing:.18em;font-size:.75rem;text-transform:uppercase;margin-bottom:12px}
-.lead{color:var(--muted);max-width:60ch;margin-top:14px}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:999px;font-weight:700;font-size:.95rem;border:2px solid transparent;transition:.2s;cursor:pointer}
-.btn-coral{background:var(--coral);color:#2a0f07}
-.btn-coral:hover{background:var(--coral-d);transform:translateY(-2px)}
-.btn-ghost{border-color:var(--cyan);color:var(--cyan)}
-.btn-ghost:hover{background:var(--cyan);color:var(--teal-900)}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soluciones M & R S.A.S. | Tecnología y Celulares</title>
+    
+    <!-- Favicon e Íconos corporativos -->
+    <link rel="icon" type="image/svg+xml" href="logo-icono (1).svg">
+    <link rel="apple-touch-icon" href="logo-icono-192.png">
 
-/* header */
-header{position:sticky;top:0;z-index:50;background:rgba(6,50,58,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
-.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.15rem}
-.brand svg{width:44px;height:44px}
-.brand b{color:var(--coral)}
-.brand span{color:var(--ink);font-weight:500}
-nav ul{display:flex;gap:28px;list-style:none;font-weight:600;font-size:.9rem}
-nav a:hover{color:var(--cyan)}
-.nav .btn{padding:10px 20px;font-size:.85rem}
-.burger{display:none;background:none;border:0;color:var(--ink);font-size:1.8rem;cursor:pointer}
+    <!-- Tipografía Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-/* hero */
-.hero{position:relative;overflow:hidden;padding:96px 0 110px;
-  background:
-   radial-gradient(900px 500px at 85% 10%,rgba(244,137,107,.18),transparent 60%),
-   radial-gradient(700px 500px at 0% 100%,rgba(18,214,230,.14),transparent 60%),
-   linear-gradient(180deg,var(--teal-800),var(--teal-900))}
-.hero .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
-.hero h1{font-size:clamp(2.3rem,5.4vw,4rem);font-weight:900}
-.hero h1 em{font-style:normal;color:var(--cyan)}
-.hero h1 i{font-style:normal;color:var(--coral)}
-.hero p{color:var(--muted);font-size:1.1rem;margin:22px 0 32px;max-width:52ch}
-.cta{display:flex;flex-wrap:wrap;gap:14px}
-.badges{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
-.badge{padding:8px 16px;border:1px solid var(--line);border-radius:999px;font-size:.8rem;font-weight:600;color:var(--muted);background:rgba(255,255,255,.04)}
-.net{position:absolute;right:-80px;top:-60px;width:520px;opacity:.5;pointer-events:none}
-.stage{position:relative;aspect-ratio:1/1.05;max-width:460px;margin-inline:auto;width:100%}
-.phone{position:absolute;border-radius:34px;border:3px solid rgba(255,255,255,.22);box-shadow:0 30px 60px rgba(0,0,0,.45)}
-.phone::after{content:"";position:absolute;top:14px;left:50%;width:34%;height:9px;border-radius:9px;background:rgba(0,0,0,.45);transform:translateX(-50%)}
-.p1{width:48%;height:86%;left:6%;top:8%;background:linear-gradient(160deg,#12d6e6,#136a78 55%,#06323a);transform:rotate(-7deg)}
-.p2{width:48%;height:86%;right:4%;top:2%;background:linear-gradient(160deg,#f4896b,#c9573a 55%,#5a2314);transform:rotate(6deg)}
-.shop{position:relative;width:100%;height:100%;object-fit:cover;border-radius:28px;border:3px solid rgba(255,255,255,.18);box-shadow:0 30px 60px rgba(0,0,0,.5)}
-.logo-img{height:58px;width:auto;display:block}
-.glow{position:absolute;inset:10% 10%;background:radial-gradient(circle,rgba(18,214,230,.35),transparent 65%);filter:blur(30px)}
+    <style>
+        /* Variables de Colores extraídas del nuevo branding */
+        :root {
+            --azul-corporativo: #162E58;
+            --azul-oscuro: #0E1F3D;
+            --turquesa-acento: #00A7C4;
+            --turquesa-hover: #0088A1;
+            --gris-texto: #334155;
+            --gris-suave: #F8FAFC;
+            --gris-borde: #E2E8F0;
+            --blanco: #FFFFFF;
+            --sombra-card: 0 10px 25px -5px rgba(22, 46, 88, 0.08);
+        }
 
-/* why */
-.why{padding:0;background:var(--coral);color:#2a0f07}
-.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:34px 0}
-.why-item{display:flex;flex-direction:column;gap:4px}
-.why-item .ic{font-size:1.6rem}
-.why-item h3{font-size:1.02rem;font-weight:800}
-.why-item p{font-size:.86rem;opacity:.85;font-weight:500}
-/* brands */
-.brands{background:var(--teal-800)}
-.brand-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;margin-top:40px}
-.brand-card{cursor:pointer;display:flex;align-items:center;justify-content:center;width:calc(25% - 12px);min-width:150px;height:120px;border-radius:18px;background:#fff;color:#0a2a30;padding:20px 24px;transition:.2s;border:1px solid transparent}
-.brand-card:hover{transform:translateY(-4px);border-color:var(--coral);box-shadow:0 14px 30px rgba(0,0,0,.3)}
-.brand-card img{max-height:68px;max-width:100%;width:auto;object-fit:contain}
-.brand-card .name{font-weight:800;font-size:1.15rem;letter-spacing:.02em}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
 
-/* offer */
-.offer-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:44px}
-.offer{position:relative;background:var(--card);border:1px solid var(--line);border-radius:26px;padding:38px;overflow:hidden}
-.offer::before{content:"";position:absolute;right:-40px;top:-40px;width:160px;height:160px;border-radius:50%;background:radial-gradient(circle,rgba(244,137,107,.25),transparent 70%)}
-.offer.w::before{background:radial-gradient(circle,rgba(18,214,230,.25),transparent 70%)}
-.tag{display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.14em;padding:6px 14px;border-radius:999px;background:var(--coral);color:#2a0f07;text-transform:uppercase}
-.offer.w .tag{background:var(--cyan);color:#032a30}
-.offer h3{font-size:1.7rem;margin:18px 0 10px}
-.offer p{color:var(--muted)}
-.offer ul{list-style:none;margin:20px 0 28px;display:grid;gap:10px}
-.offer li{display:flex;gap:10px;font-weight:500}
-.offer li::before{content:"✓";color:var(--cyan);font-weight:800}
+        body {
+            color: var(--gris-texto);
+            background-color: var(--blanco);
+            line-height: 1.6;
+        }
 
-/* categories */
-.cats{background:linear-gradient(180deg,var(--teal-900),var(--teal-800))}
-.cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:40px}
-.cat{padding:28px 22px;border-radius:20px;background:rgba(255,255,255,.04);border:1px solid var(--line);transition:.2s}
-.cat:hover{background:rgba(255,255,255,.08);border-color:var(--cyan)}
-.cat .ic{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:rgba(18,214,230,.14);color:var(--cyan);font-size:1.4rem;margin-bottom:14px}
-.cat h3{font-size:1.05rem;margin-bottom:6px}
-.cat p{font-size:.88rem;color:var(--muted)}
+        /* --- Header / Navegación --- */
+        header {
+            background-color: var(--blanco);
+            border-bottom: 1px solid var(--gris-borde);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+        }
 
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 24px;
+        }
 
-/* catalog */
-.catalog{background:linear-gradient(180deg,var(--teal-800),var(--teal-900))}
-.c-tools{display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin-top:34px}
-.search{flex:1 1 280px;position:relative}
-.search input{width:100%;padding:14px 20px 14px 46px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.06);color:var(--ink);font:inherit;font-size:.95rem}
-.search input::placeholder{color:var(--muted)}
-.search input:focus{outline:2px solid var(--cyan);border-color:transparent}
-.search span{position:absolute;left:18px;top:50%;transform:translateY(-50%);opacity:.7}
-.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
-.chip{padding:9px 18px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--ink);font:inherit;font-weight:600;font-size:.85rem;cursor:pointer;transition:.2s}
-.chip:hover{border-color:var(--cyan)}
-.chip.on{background:var(--cyan);color:var(--teal-900);border-color:var(--cyan)}
-.chip small{opacity:.7;margin-left:4px}
-.p-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px;margin-top:30px}
-.p-card{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;transition:.2s}
-.p-card:hover{transform:translateY(-4px);border-color:var(--coral)}
-.p-img{background:none;aspect-ratio:1/1;position:relative;cursor:pointer;border:0;width:100%;overflow:hidden}
-.p-img img{position:absolute;inset:22px;width:calc(100% - 44px);height:calc(100% - 44px);object-fit:contain;filter:drop-shadow(0 14px 16px rgba(0,0,0,.35))}
-.p-body{padding:20px;display:flex;flex-direction:column;gap:6px;flex:1}
-.p-brand{color:var(--coral);font-weight:800;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase}
-.p-name{font-size:1.15rem;font-weight:800}
-.p-sub{color:var(--muted);font-size:.82rem}
-.sw{display:flex;gap:8px;align-items:center;margin:6px 0 10px;font-size:.78rem;color:var(--muted)}
-.sw button{width:22px;height:22px;border-radius:50%;border:2px solid var(--line);cursor:pointer;padding:0}
-.sw button.on{border-color:var(--cyan);box-shadow:0 0 0 2px var(--teal-900) inset}
-.p-body .btn{margin-top:auto;justify-content:center;background:#25d366;color:#052e16;padding:12px 16px;font-size:.88rem}
-.p-body .btn:hover{background:#1ebe5a;transform:translateY(-2px)}
-.p-more{background:none;border:0;color:var(--cyan);font:inherit;font-weight:600;font-size:.82rem;cursor:pointer;text-align:left;padding:0;margin-bottom:10px}
-.empty{grid-column:1/-1;text-align:center;color:var(--muted);padding:40px 10px}
-.modal{position:fixed;inset:0;z-index:80;background:rgba(3,20,24,.8);display:none;align-items:center;justify-content:center;padding:20px}
-.modal.open{display:flex}
-.m-box{background:var(--teal-800);border:1px solid var(--line);border-radius:24px;max-width:900px;width:100%;max-height:90vh;overflow:auto;display:grid;grid-template-columns:1fr 1fr;position:relative}
-.m-gal{background:none;padding:24px;display:flex;flex-direction:column;gap:12px;align-items:center}
-.m-gal .main{height:380px;max-width:100%;object-fit:contain;filter:drop-shadow(0 14px 16px rgba(0,0,0,.35))}
-.m-th{display:flex;gap:8px}
-.m-th img{height:64px;width:48px;object-fit:contain;border:2px solid var(--line);border-radius:8px;cursor:pointer;background:rgba(255,255,255,.04);padding:3px}
-.m-th img.on{border-color:var(--coral)}
-.m-info{padding:28px}
-.m-info h3{font-size:1.6rem;margin:6px 0 14px}
-.m-info ul{list-style:none;display:grid;gap:8px;margin-bottom:22px;font-size:.9rem}
-.m-info li b{color:var(--cyan);font-weight:700}
-.m-x{position:absolute;right:14px;top:10px;background:none;border:0;color:var(--ink);font-size:1.8rem;cursor:pointer;z-index:2}
-@media(max-width:760px){.m-box{grid-template-columns:1fr}.m-gal .main{height:300px}}
+        .brand-logo-header {
+            height: 48px;
+            width: auto;
+            display: block;
+        }
 
-/* contact */
-.contact{background:var(--sand);color:#10353b}
-.contact .eyebrow{color:var(--coral-d)}
-.contact .lead{color:#3d6168}
-.c-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:40px;align-items:stretch}
-.c-card{background:#fff;border-radius:26px;padding:34px;box-shadow:0 20px 50px rgba(6,50,58,.12)}
-.c-list{list-style:none;display:grid;gap:20px}
-.c-list li{display:flex;gap:16px;align-items:flex-start}
-.c-list .ic{flex:none;width:48px;height:48px;border-radius:14px;background:var(--teal-800);color:var(--cyan);display:grid;place-items:center;font-size:1.3rem}
-.c-list small{display:block;font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.7rem;color:var(--coral-d)}
-.c-list strong{font-size:1.1rem;word-break:break-word}
-.c-list a:hover{color:var(--coral-d)}
-.social{display:grid;gap:14px}
-.s-btn{display:flex;align-items:center;gap:16px;padding:18px 20px;border-radius:18px;background:var(--teal-800);color:#fff;font-weight:700;transition:.2s}
-.s-btn:hover{transform:translateX(6px);background:var(--teal-600)}
-.s-btn .ic{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--coral);color:#2a0f07}
-.s-btn .ic svg{width:22px;height:22px;fill:currentColor}
-.s-btn small{display:block;font-weight:500;opacity:.75;font-size:.8rem}
-.s-btn .arrow{margin-left:auto;font-size:1.3rem;color:var(--cyan)}
-.map-box{margin-top:22px;border-radius:20px;background:linear-gradient(135deg,var(--teal-800),var(--teal-600));color:#fff;padding:26px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
-.map-box h3{font-size:1.15rem}
-.map-box p{font-size:.88rem;opacity:.8}
-.hide{display:none!important}
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+        }
 
-/* footer */
-footer{background:var(--teal-900);padding:46px 0 30px;border-top:1px solid var(--line)}
-.f-row{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-.f-row small{color:var(--muted)}
-.wa{position:fixed;right:20px;bottom:20px;z-index:60;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 26px rgba(0,0,0,.4);transition:.2s}
-.wa:hover{transform:scale(1.08)}
-.wa svg{width:32px;height:32px;fill:#fff}
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--azul-corporativo);
+            font-weight: 600;
+            font-size: 15px;
+            transition: color 0.2s ease;
+        }
 
-@media(max-width:980px){
-  .cat-grid{grid-template-columns:repeat(2,1fr)}
-  .why-grid{grid-template-columns:repeat(2,1fr)}
-  .hero .grid,.c-grid,.offer-grid{grid-template-columns:1fr}
-  .stage{max-width:340px}
-}
-@media(max-width:760px){
-  section{padding:64px 0}
-  nav ul{position:absolute;top:72px;left:0;right:0;background:var(--teal-900);flex-direction:column;padding:20px;gap:16px;border-bottom:1px solid var(--line);display:none}
-  nav ul.open{display:flex}
-  .burger{display:block}
-  .nav .btn{display:none}
-  .brand-card{width:calc(50% - 8px);min-width:0}
-  .offer,.c-card{padding:26px}
-}
-</style>
+        .nav-menu a:hover {
+            color: var(--turquesa-acento);
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            background: linear-gradient(135deg, var(--azul-corporativo) 0%, var(--azul-oscuro) 100%);
+            color: var(--blanco);
+            padding: 140px 24px 80px 24px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            max-width: 850px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .badge-experience {
+            background-color: rgba(0, 167, 196, 0.15);
+            border: 1px solid var(--turquesa-acento);
+            color: var(--turquesa-acento);
+            padding: 6px 18px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 24px;
+            letter-spacing: 0.5px;
+        }
+
+        .hero h1 {
+            font-size: 46px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 36px;
+            font-weight: 400;
+        }
+
+        .btn-cta {
+            background-color: var(--turquesa-acento);
+            color: var(--blanco);
+            padding: 16px 36px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(0, 167, 196, 0.3);
+        }
+
+        .btn-cta:hover {
+            background-color: var(--turquesa-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 167, 196, 0.4);
+        }
+
+        /* --- Sección Servicios --- */
+        .services {
+            padding: 90px 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 34px;
+            font-weight: 800;
+            color: var(--azul-corporativo);
+            margin-bottom: 12px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: #64748B;
+            font-size: 16px;
+            margin-bottom: 50px;
+        }
+
+        .title-line {
+            width: 60px;
+            height: 4px;
+            background-color: var(--turquesa-acento);
+            margin: 12px auto 0;
+            border-radius: 2px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+        }
+
+        .service-card {
+            background-color: var(--blanco);
+            border: 1px solid var(--gris-borde);
+            padding: 40px 32px;
+            border-radius: 12px;
+            box-shadow: var(--sombra-card);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--turquesa-acento);
+        }
+
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            background-color: rgba(0, 167, 196, 0.1);
+            color: var(--turquesa-acento);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            color: var(--azul-corporativo);
+            font-size: 22px;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        /* --- Sección Marcas --- */
+        .brands-section {
+            background-color: var(--gris-suave);
+            padding: 80px 24px;
+            border-top: 1px solid var(--gris-borde);
+            border-bottom: 1px solid var(--gris-borde);
+        }
+
+        .brands-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 48px;
+            padding-top: 30px;
+        }
+
+        .brand-logo {
+            height: 40px;
+            max-width: 140px;
+            object-fit: contain;
+            filter: grayscale(100%);
+            opacity: 0.6;
+            transition: all 0.3s ease;
+        }
+
+        .brand-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+            transform: scale(1.08);
+        }
+
+        /* --- Sección Contacto --- */
+        .contact {
+            padding: 90px 24px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 48px;
+        }
+
+        .info-box {
+            background-color: var(--blanco);
+            padding: 36px;
+            border-radius: 12px;
+            border-left: 6px solid var(--turquesa-acento);
+            box-shadow: var(--sombra-card);
+            border-top: 1px solid var(--gris-borde);
+            border-right: 1px solid var(--gris-borde);
+            border-bottom: 1px solid var(--gris-borde);
+        }
+
+        .info-box h3 {
+            color: var(--azul-corporativo);
+            font-size: 22px;
+            margin-bottom: 24px;
+            font-weight: 700;
+        }
+
+        .info-item {
+            margin-bottom: 18px;
+            font-size: 15px;
+        }
+
+        .info-item strong {
+            color: var(--azul-corporativo);
+            display: block;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 2px;
+        }
+
+        .contact-form {
+            background-color: var(--gris-suave);
+            padding: 36px;
+            border-radius: 12px;
+            border: 1px solid var(--gris-borde);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--azul-corporativo);
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid var(--gris-borde);
+            border-radius: 6px;
+            font-size: 15px;
+            background-color: var(--blanco);
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            border-color: var(--turquesa-acento);
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: var(--azul-oscuro);
+            color: var(--blanco);
+            padding: 40px 24px;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        footer img {
+            height: 40px;
+            margin-bottom: 16px;
+            filter: brightness(0) invert(1);
+            opacity: 0.9;
+        }
+
+        footer p {
+            font-size: 14px;
+            opacity: 0.7;
+        }
+
+        /* Adaptabilidad Móvil */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 32px; }
+            .hero p { font-size: 16px; }
+            .nav-menu { display: none; }
+            .brands-container { gap: 32px; }
+            .brand-logo { height: 32px; }
+            .brand-logo-header { height: 38px; }
+        }
+    </style>
 </head>
 <body>
 
-<header>
-  <div class="wrap nav">
-    <a href="#inicio" class="brand" aria-label="HPhones">
-      <img class="logo-img" src="img/hphones-logo-nuevo.png" alt="HPhones" width="131" height="58">
-    </a>
-    <nav>
-      <ul id="menu">
-        <li><a href="#marcas">Marcas</a></li>
-        <li><a href="#catalogo">Catálogo</a></li>
-        <li><a href="#venta">Mayor y detal</a></li>
-        <li><a href="#productos">Productos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-    <a href="#contacto" class="btn btn-coral">Escríbenos</a>
-    <button class="burger" id="burger" aria-label="Abrir menú">☰</button>
-  </div>
-</header>
-
-<main>
-<section class="hero" id="inicio">
-  <svg class="net" viewBox="0 0 400 400" fill="none" stroke="#f4896b" stroke-width="1.5" aria-hidden="true">
-    <g><path d="M200 40L320 110 360 230 280 340 140 350 50 260 60 130Z"/><path d="M200 40L200 200 320 110M200 200L360 230M200 200L280 340M200 200L140 350M200 200L50 260M200 200L60 130"/></g>
-    <g fill="#f4896b" stroke="none"><circle cx="200" cy="40" r="6"/><circle cx="320" cy="110" r="6"/><circle cx="360" cy="230" r="6"/><circle cx="280" cy="340" r="6"/><circle cx="140" cy="350" r="6"/><circle cx="50" cy="260" r="6"/><circle cx="60" cy="130" r="6"/><circle cx="200" cy="200" r="8"/></g>
-  </svg>
-  <div class="wrap grid">
-    <div>
-      <span class="eyebrow">Tecnología sin límites</span>
-      <h1>Los mejores <em>celulares</em> del mundo, <i>al alcance</i> de tu mano</h1>
-      <p>Smartphones y accesorios de Apple, Google, OnePlus, RedMagic, Sony, Nothing y Xiaomi. Compra una unidad o abastece tu negocio con precios al por mayor.</p>
-      <div class="cta">
-        <a href="#contacto" class="btn btn-coral">Cotiza ahora →</a>
-        <a href="#marcas" class="btn btn-ghost">Ver marcas</a>
-      </div>
-      <div class="badges">
-        <span class="badge">📱 Equipos nuevos</span>
-        <span class="badge">✅ 100% originales</span>
-        <span class="badge">🤝 Asesoría en tu compra</span>
-        <span class="badge">✈️ Envíos nacionales</span>
-      </div>
-    </div>
-    <div class="stage">
-      <div class="glow"></div>
-      <img class="shop" src="img/local-hphones.jpg" alt="Tienda HPhones">
-    </div>
-  </div>
-</section>
-
-<section class="why">
-  <div class="wrap why-grid">
-    <div class="why-item"><div class="ic">📱</div><h3>Equipos celulares nuevos</h3><p>Lo último en tecnología, sellado y con garantía.</p></div>
-    <div class="why-item"><div class="ic">✅</div><h3>Originales 100%</h3><p>Productos auténticos de las mejores marcas.</p></div>
-    <div class="why-item"><div class="ic">🤝</div><h3>Asesoramos tu compra</h3><p>Te ayudamos a elegir el equipo ideal para ti.</p></div>
-    <div class="why-item"><div class="ic">✈️</div><h3>Envíos nacionales</h3><p>Recibe tu pedido en cualquier lugar del país.</p></div>
-  </div>
-</section>
-
-<section class="brands" id="marcas">
-  <div class="wrap">
-    <span class="eyebrow">Nuestras marcas</span>
-    <h2>Siete marcas, una sola tienda</h2>
-    <p class="lead">Trabajamos con fabricantes líderes en innovación, rendimiento y diseño.</p>
-    <div class="brand-grid" id="brandGrid"></div>
-  </div>
-</section>
-
-<section id="venta">
-  <div class="wrap">
-    <span class="eyebrow">Formas de compra</span>
-    <h2>Al detal y al por mayor</h2>
-    <p class="lead">Elige la modalidad que se ajusta a ti. Te asesoramos en cada paso.</p>
-    <div class="offer-grid">
-      <article class="offer">
-        <span class="tag">Al detal</span>
-        <h3>Para ti</h3>
-        <p>Encuentra tu próximo celular y los accesorios que lo complementan.</p>
-        <ul>
-          <li>Equipos de las siete marcas</li>
-          <li>Accesorios originales y compatibles</li>
-          <li>Asesoría personalizada en tienda</li>
-        </ul>
-        <a href="#contacto" class="btn btn-coral">Pregunta por un equipo</a>
-      </article>
-      <article class="offer w">
-        <span class="tag">Al por mayor</span>
-        <h3>Para tu negocio</h3>
-        <p>Surte tu tienda o distribuidora con volumen, variedad y buen precio.</p>
-        <ul>
-          <li>Precios especiales por volumen</li>
-          <li>Catálogo amplio de celulares y accesorios</li>
-          <li>Atención directa para distribuidores</li>
-        </ul>
-        <a href="#contacto" class="btn btn-ghost">Solicita lista mayorista</a>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="catalog" id="catalogo">
-  <div class="wrap">
-    <span class="eyebrow">Catálogo</span>
-    <h2>Celulares disponibles</h2>
-    <p class="lead">Elige un equipo y cotízalo directamente por WhatsApp. Te respondemos con precio y disponibilidad.</p>
-    <div class="c-tools">
-      <label class="search"><span>🔍</span><input id="q" type="search" placeholder="Buscar por nombre o marca…" autocomplete="off"></label>
-    </div>
-    <div class="chips" id="chips"></div>
-    <div class="p-grid" id="pGrid"></div>
-  </div>
-</section>
-
-<section class="cats" id="productos">
-  <div class="wrap">
-    <span class="eyebrow">Categorías</span>
-    <h2>Todo para tu celular</h2>
-    <div class="cat-grid">
-      <div class="cat"><div class="ic">📱</div><h3>Smartphones</h3><p>Gama media, alta y gaming de las mejores marcas.</p></div>
-      <div class="cat"><div class="ic">🔋</div><h3>Cargadores y baterías</h3><p>Carga rápida, power banks y cables.</p></div>
-      <div class="cat"><div class="ic">🛡️</div><h3>Protección</h3><p>Fundas, vidrios templados y protectores de cámara.</p></div>
-      <div class="cat"><div class="ic">🎧</div><h3>Audio y wearables</h3><p>Audífonos, relojes y más accesorios inteligentes.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="contact" id="contacto">
-  <div class="wrap">
-    <span class="eyebrow">Contacto</span>
-    <h2>Visítanos o escríbenos</h2>
-    <p class="lead">Estamos listos para atenderte. Elige el canal que prefieras.</p>
-
-    <div class="c-grid">
-      <div class="c-card">
-        <ul class="c-list">
-          <li id="liAddress"><div class="ic">📍</div><div><small>Dirección</small><strong id="vAddress"></strong></div></li>
-          <li id="liPhone"><div class="ic">📞</div><div><small>Teléfono</small><strong><a id="vPhone" href="#"></a></strong></div></li>
-          <li id="liWa"><div class="ic">💬</div><div><small>WhatsApp</small><strong><a id="vWa" href="#" target="_blank" rel="noopener"></a></strong></div></li>
-          <li id="liMail"><div class="ic">✉️</div><div><small>Correo</small><strong><a id="vMail" href="#"></a></strong></div></li>
-          <li id="liHours"><div class="ic">🕒</div><div><small>Horario</small><strong id="vHours"></strong></div></li>
-        </ul>
-        <div class="map-box">
-          <div><h3>Encuéntranos en el mapa</h3><p>Abre nuestro perfil en Google Maps.</p></div>
-          <a class="btn btn-coral" href="https://maps.app.goo.gl/pP8wZk1jMutDVkYw5" target="_blank" rel="noopener">Cómo llegar →</a>
+    <!-- Encabezado -->
+    <header>
+        <div class="nav-container">
+            <a href="#inicio">
+                <img src="logo-horizontal (1).svg" alt="Soluciones M & R S.A.S." class="brand-logo-header">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#marcas">Marcas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
         </div>
-      </div>
+    </header>
 
-      <div class="c-card">
-        <h3 style="margin-bottom:6px;font-size:1.4rem">Síguenos en redes</h3>
-        <p style="color:#3d6168;margin-bottom:22px">Novedades, lanzamientos y ofertas.</p>
-        <div class="social">
-          <a class="s-btn" href="https://www.instagram.com/hphones.store/" target="_blank" rel="noopener">
-            <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 7a5 5 0 100 10 5 5 0 000-10zm0 8.2A3.2 3.2 0 1112 8.8a3.2 3.2 0 010 6.4zM17.5 6.2a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0zM21.9 7.7c-.1-1.8-.5-3.400-1.800-4.700S17.100 2.200 15.300 2.100C13.500 2 10.500 2 8.700 2.100 6.900 2.200 5.300 2.600 4 3.900S2.200 6.900 2.100 8.700C2 10.500 2 13.500 2.100 15.300c.1 1.800.5 3.400 1.800 4.700s2.900 1.700 4.800 1.800c1.800.1 4.800.1 6.600 0 1.800-.1 3.400-.5 4.700-1.800s1.700-2.900 1.800-4.700c.1-1.800.1-4.800 0-6.600zM20.100 17.300a3.700 3.700 0 01-2.100 2.100c-1.500.6-5 .5-6 .5s-4.500.1-6-.5a3.700 3.700 0 01-2.100-2.100C3.300 15.800 3.400 12.300 3.400 11.300s-.1-4.500.5-6A3.700 3.700 0 016 3.200c1.500-.6 5-.5 6-.5s4.500-.1 6 .5a3.700 3.700 0 012.100 2.100c.6 1.500.5 5 .5 6s.1 4.500-.5 6z"/></svg></span>
-            <span>Instagram<small>@hphones.store</small></span><span class="arrow">→</span>
-          </a>
-          <a class="s-btn" href="https://www.facebook.com/hphones.com.co/" target="_blank" rel="noopener">
-            <span class="ic"><svg viewBox="0 0 24 24"><path d="M13.500 22v-8.200h2.800l.4-3.300h-3.200V8.400c0-.9.300-1.600 1.600-1.600h1.700V3.900c-.3 0-1.300-.1-2.500-.1-2.500 0-4.200 1.500-4.200 4.300v2.400H7.300v3.300h2.800V22z"/></svg></span>
-            <span>Facebook<small>/hphones.com.co</small></span><span class="arrow">→</span>
-          </a>
-          <a class="s-btn" href="https://maps.app.goo.gl/pP8wZk1jMutDVkYw5" target="_blank" rel="noopener">
-            <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 2a7 7 0 00-7 7c0 5.200 7 13 7 13s7-7.800 7-13a7 7 0 00-7-7zm0 9.500A2.500 2.500 0 1112 6.500a2.500 2.500 0 010 5z"/></svg></span>
-            <span>Google Maps<small>Ubicación y reseñas</small></span><span class="arrow">→</span>
-          </a>
+    <!-- Sección Inicio / Hero -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <div class="badge-experience">Desde 2011 a su servicio</div>
+            <h1>Distribución de Tecnología Mayorista y al Detal</h1>
+            <p>Especialistas en dispositivos móviles, tablets y accesorios de última generación en Bogotá D.C. y Colombia.</p>
+            <a href="#contacto" class="btn-cta">Solicitar Cotización</a>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
-</main>
+    </section>
 
-<footer>
-  <div class="wrap f-row">
-    <div class="brand"><img class="logo-img" src="img/hphones-logo-nuevo.png" alt="HPhones" width="131" height="58"></div>
-    <small>© <span id="yr"></span> HPhones · hphones.net · Todos los derechos reservados.</small>
-    <small>Las marcas mencionadas pertenecen a sus respectivos propietarios.</small>
-  </div>
-</footer>
+    <!-- Sección Servicios -->
+    <section id="servicios" class="services">
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <div class="title-line"></div>
+        <p class="section-subtitle">Soluciones integrales de abastecimiento tecnológico para empresas y usuarios finales</p>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">M</div>
+                <h3>Venta al por Mayor</h3>
+                <p>Abastecemos tu negocio con un catálogo amplio de dispositivos tecnológicos y accesorios con precios competitivos por volumen.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">D</div>
+                <h3>Venta al Detal</h3>
+                <p>Ofrecemos los últimos lanzamientos del mercado móvil directamente al consumidor final con garantía y asesoría experta.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">A</div>
+                <h3>Dispositivos y Accesorios</h3>
+                <p>Contamos con stock disponible de celulares de alta gama, tablets de rendimiento optimizado y accesorios complementarios indispensables.</p>
+            </div>
+        </div>
+    </section>
 
-<div class="modal" id="modal" role="dialog" aria-modal="true">
-  <div class="m-box">
-    <button class="m-x" id="mx" aria-label="Cerrar">×</button>
-    <div class="m-gal"><img class="main" id="mMain" alt=""><div class="m-th" id="mTh"></div></div>
-    <div class="m-info"><span class="p-brand" id="mBrand"></span><h3 id="mName"></h3><ul id="mSpecs"></ul><a class="btn btn-coral" id="mWa" target="_blank" rel="noopener" style="background:#25d366;color:#052e16">💬 Cotizar por WhatsApp</a></div>
-  </div>
-</div>
+    <!-- Sección Marcas -->
+    <section id="marcas" class="brands-section">
+        <h2 class="section-title">Marcas Disponibles</h2>
+        <div class="title-line"></div>
+        <p class="section-subtitle">Distribuimos tecnología móvil de marcas líderes mundiales</p>
+        
+        <div class="brands-container">
+            <img class="brand-logo" src="xiaomi.png" alt="Xiaomi">
+            <img class="brand-logo" src="oneplus.png" alt="OnePlus">
+            <img class="brand-logo" src="redmagic.png" alt="RedMagic">
+            <img class="brand-logo" src="nothing.png" alt="Nothing Phone">
+            <img class="brand-logo" src="sony.jpg" alt="Sony">
+            <img class="brand-logo" src="google.png" alt="Google Pixel">
+        </div>
+    </section>
 
-<a class="wa hide" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
-  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.600 15.100L2 22l5-1.300A10 10 0 1012 2zm5.800 14.200c-.2.700-1.400 1.300-1.900 1.300-.5.100-1.100.1-1.800-.1-.4-.1-1-.3-1.700-.6-3-1.300-4.900-4.300-5-4.500-.1-.2-1.200-1.600-1.200-3s.8-2.100 1-2.400c.3-.3.600-.3.800-.3h.6c.2 0 .4 0 .6.500l.8 2c.1.200.1.300 0 .5l-.3.500-.4.400c-.1.200-.3.300-.1.600.2.300.7 1.200 1.500 1.900 1 .9 1.900 1.200 2.200 1.300.3.100.4.100.6-.1l.8-1c.2-.3.400-.2.600-.1l1.900.9c.3.100.5.200.6.300.1.200.1.800-.1 1.500z"/></svg>
-</a>
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contact">
+        <h2 class="section-title">Contacto e Información</h2>
+        <div class="title-line"></div>
+        <p class="section-subtitle">Ponte en contacto con nuestro equipo comercial</p>
 
-<script>
-/* ============================================================
-   CONFIGURACIÓN — edita solo este bloque con tus datos reales.
-   Los campos que dejes vacíos ("") se ocultan automáticamente.
-   ============================================================ */
-const CONFIG = {
-  address:  "Cra. 38 #9-32, Local 260, Bogotá",
-  phone:    "",   // Ej: "+57 601 123 4567"
-  whatsapp: "573012671518",
-  email:    "hphonescomunicaciones@gmail.com",
-  hours:    ""    // Ej: "Lun a Sáb 10:00 a.m. – 7:00 p.m."
-};
+        <div class="contact-grid">
+            <div class="info-box">
+                <h3>Información Corporativa</h3>
+                
+                <div class="info-item">
+                    <strong>Razón Social</strong>
+                    Soluciones M & R S.A.S.
+                </div>
+                <div class="info-item">
+                    <strong>NIT</strong>
+                    900.449.188-9[cite: 12.3, 12.5]
+                </div>
+                <div class="info-item">
+                    <strong>Teléfono / WhatsApp</strong>
+                    +57 350 547 5065[cite: 12.3, 12.5]
+                </div>
+                <div class="info-item">
+                    <strong>Correo Electrónico</strong>
+                    solucionesmyr.sas@gmail.com[cite: 12.3]
+                </div>
+                <div class="info-item">
+                    <strong>Ubicación Principal</strong>
+                    Bogotá D.C. / Zipaquirá, Cundinamarca, Colombia[cite: 12.3, 12.5]
+                </div>
+            </div>
 
-/* Marcas y sus logos (carpeta img/marcas/). Si un archivo falta, se muestra el nombre como texto. */
-const BRANDS = [
-  {name:"Apple",    logo:"img/marcas/apple.png"},
-  {name:"Google",   logo:"img/marcas/google.png"},
-  {name:"OnePlus",  logo:"img/marcas/oneplus.png"},
-  {name:"RedMagic", logo:"img/marcas/redmagic.png"},
-  {name:"Sony",     logo:"img/marcas/sony.png"},
-  {name:"Nothing",  logo:"img/marcas/nothing.png"},
-  {name:"Xiaomi",   logo:"img/marcas/xiaomi.png"}
-];
+            <div class="contact-form">
+                <form action="mailto:solucionesmyr.sas@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="nombre">Nombre o Empresa</label>
+                        <input type="text" id="nombre" name="Nombre" required placeholder="Tu nombre o empresa">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="Correo" required placeholder="correo@ejemplo.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje o Solicitud de Cotización</label>
+                        <textarea id="mensaje" name="Mensaje" rows="4" required placeholder="Escribe aquí los productos o servicios en los que estás interesado..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-cta" style="width: 100%; border: none; cursor: pointer;">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-/* ---- render ---- */
-const $ = id => document.getElementById(id);
+    <!-- Pie de página -->
+    <footer>
+        <img src="logo-horizontal (1).svg" alt="Soluciones M & R S.A.S.">
+        <p>&copy; 2026 Soluciones M & R S.A.S. - Todos los derechos reservados.</p>
+    </footer>
 
-$("brandGrid").innerHTML = BRANDS.map(b =>
-  `<div class="brand-card" title="${b.name}">
-     <img src="${b.logo}" alt="Logo ${b.name}" onerror="this.outerHTML='<span class=&quot;name&quot;>${b.name}</span>'">
-   </div>`).join("");
-
-function show(liId, ok){ if(!ok) $(liId).classList.add("hide"); }
-
-if(CONFIG.address){ $("vAddress").textContent = CONFIG.address; } show("liAddress", CONFIG.address);
-if(CONFIG.phone){ const a=$("vPhone"); a.textContent=CONFIG.phone; a.href="tel:"+CONFIG.phone.replace(/[^\d+]/g,""); } show("liPhone", CONFIG.phone);
-if(CONFIG.email){ const a=$("vMail"); a.textContent=CONFIG.email; a.href="mailto:"+CONFIG.email; } show("liMail", CONFIG.email);
-if(CONFIG.hours){ $("vHours").textContent = CONFIG.hours; } show("liHours", CONFIG.hours);
-if(CONFIG.whatsapp){
-  const url = "https://wa.me/"+CONFIG.whatsapp.replace(/\D/g,"")+"?text="+encodeURIComponent("Hola HPhones, quisiera información sobre sus celulares.");
-  const a=$("vWa"); a.href=url; a.textContent="+"+CONFIG.whatsapp.replace(/^(\d{2})(\d{3})(\d{3})(\d{4})$/,"$1 $2 $3 $4");
-  $("waFloat").href=url; $("waFloat").classList.remove("hide");
-}
-show("liWa", CONFIG.whatsapp);
-
-
-/* ============================================================
-   CATÁLOGO — para agregar un equipo, copia un bloque y edítalo.
-   colors: cada color con su nombre, tono (#hex) y lista de fotos.
-   ============================================================ */
-const PRODUCTS = [
- {
-  "brand": "Google",
-  "name": "Google Pixel 11",
-  "variant": "12GB RAM + 256GB",
-  "specs": [
-   [
-    "ID de modelo",
-    "GUJ0N"
-   ],
-   [
-    "Pantalla",
-    "6.3\" Actua, 60–120Hz, hasta 3000 nits (pico)"
-   ],
-   [
-    "Procesador",
-    "Google Tensor G6 + Titan M3"
-   ],
-   [
-    "Memoria",
-    "12GB RAM + 256GB"
-   ],
-   [
-    "Batería",
-    "4,985 mAh típica · carga rápida 30W · inalámbrica Pixelsnap Qi2.2 25W"
-   ],
-   [
-    "Cámara trasera",
-    "48MP principal + 13MP ultra gran angular + 10.8MP teleobjetivo 5x"
-   ],
-   [
-    "Cámara frontal",
-    "10.5MP con autofocus"
-   ],
-   [
-    "Resistencia",
-    "IP68 · Gorilla Glass Victus 2"
-   ],
-   [
-    "Conectividad",
-    "Wi-Fi 6E, NFC, Dual eSIM, USB-C 3.2"
-   ],
-   [
-    "Actualizaciones",
-    "7 años de Android y seguridad"
-   ]
-  ],
-  "colors": [
-   {
-    "name": "Frost",
-    "hex": "#c9c3dd",
-    "imgs": [
-     "img/productos/google-pixel-11-frost-2.webp",
-     "img/productos/google-pixel-11-frost-1.webp",
-     "img/productos/google-pixel-11-frost-3.webp"
-    ]
-   },
-   {
-    "name": "Obsidian",
-    "hex": "#2a2c30",
-    "imgs": [
-     "img/productos/google-pixel-11-obsidian-2.webp",
-     "img/productos/google-pixel-11-obsidian-1.webp"
-    ]
-   }
-  ]
- },
- {
-  "brand": "Google",
-  "name": "Google Pixel 11 Pro",
-  "variant": "12GB RAM + 256GB",
-  "specs": [
-   [
-    "ID de modelo",
-    "GM45K"
-   ],
-   [
-    "Pantalla",
-    "6.3\", hasta 2400 nits (HDR) y 3600 nits (pico)"
-   ],
-   [
-    "Procesador",
-    "Google Tensor G6 + Titan M3"
-   ],
-   [
-    "Memoria",
-    "12GB RAM + 256GB"
-   ],
-   [
-    "Batería",
-    "4,850 mAh típica · carga inalámbrica Pixelsnap"
-   ],
-   [
-    "Cámara trasera",
-    "50MP principal + 48MP ultra gran angular + 48MP teleobjetivo 5x · Pro Zoom hasta 120x"
-   ],
-   [
-    "Cámara frontal",
-    "42MP"
-   ],
-   [
-    "Resistencia",
-    "IP68 · Gorilla Glass Victus 2"
-   ],
-   [
-    "Sistema",
-    "Android 17 · 7 años de actualizaciones"
-   ]
-  ],
-  "colors": [
-   {
-    "name": "Obsidian",
-    "hex": "#2a2c30",
-    "imgs": [
-     "img/productos/google-pixel-11-pro-obsidian-2.webp",
-     "img/productos/google-pixel-11-pro-obsidian-3.webp"
-    ]
-   }
-  ]
- },
- {
-  "brand": "Google",
-  "name": "Google Pixel 11 Pro XL",
-  "variant": "12GB RAM + 256GB",
-  "specs": [
-   [
-    "ID de modelo",
-    "G4HCD"
-   ],
-   [
-    "Pantalla",
-    "6.8\", hasta 2400 nits (HDR) y 3600 nits (pico)"
-   ],
-   [
-    "Procesador",
-    "Google Tensor G6 + Titan M3"
-   ],
-   [
-    "Memoria",
-    "12GB RAM + 256GB"
-   ],
-   [
-    "Batería",
-    "5,115 mAh típica · carga inalámbrica Pixelsnap"
-   ],
-   [
-    "Cámara trasera",
-    "50MP principal + 48MP ultra gran angular + 48MP teleobjetivo 5x · Pro Zoom hasta 120x"
-   ],
-   [
-    "Cámara frontal",
-    "42MP"
-   ],
-   [
-    "Resistencia",
-    "IP68 · Gorilla Glass Victus 2"
-   ],
-   [
-    "Sistema",
-    "Android 17 · 7 años de actualizaciones"
-   ]
-  ],
-  "colors": [
-   {
-    "name": "Obsidian",
-    "hex": "#2a2c30",
-    "imgs": [
-     "img/productos/google-pixel-11-pro-xl-obsidian-3.webp",
-     "img/productos/google-pixel-11-pro-xl-obsidian-1.webp",
-     "img/productos/google-pixel-11-pro-xl-obsidian-2.webp"
-    ]
-   }
-  ]
- },
- {
-  "brand": "Google",
-  "name": "Google Pixel 11 Pro Fold",
-  "variant": "16GB RAM + 512GB",
-  "specs": [
-   [
-    "ID de modelo",
-    "GZDQ6"
-   ],
-   [
-    "Pantalla externa",
-    "6.5\" Super Actua, 1–120Hz"
-   ],
-   [
-    "Pantalla interna plegable",
-    "8\" Super Actua Flex, 1–120Hz"
-   ],
-   [
-    "Brillo",
-    "Hasta 2000 nits (HDR) y 3600 nits (pico)"
-   ],
-   [
-    "Procesador",
-    "Google Tensor G6 + Titan M3"
-   ],
-   [
-    "Memoria",
-    "16GB RAM + 512GB"
-   ],
-   [
-    "Batería",
-    "4,806 mAh típica · carga inalámbrica Pixelsnap Qi2.2 25W"
-   ],
-   [
-    "Cámara trasera",
-    "48MP principal + 10.5MP ultra gran angular + 10.8MP teleobjetivo 5x"
-   ],
-   [
-    "Cámaras frontales",
-    "10MP externa + 10MP interna"
-   ],
-   [
-    "Resistencia",
-    "IP68"
-   ],
-   [
-    "Sistema",
-    "Android 17 · 7 años de actualizaciones"
-   ]
-  ],
-  "colors": [
-   {
-    "name": "Obsidian",
-    "hex": "#2a2c30",
-    "imgs": [
-     "img/productos/google-pixel-11-pro-fold-obsidian-1.webp",
-     "img/productos/google-pixel-11-pro-fold-obsidian-3.webp",
-     "img/productos/google-pixel-11-pro-fold-obsidian-2.webp"
-    ]
-   }
-  ]
- },
- {
-  "brand": "Google",
-  "name": "Google Pixel 10a",
-  "variant": "8GB RAM + 128GB",
-  "specs": [
-   [
-    "ID de modelo",
-    "G4H7L"
-   ],
-   [
-    "Pantalla",
-    "6.3\" Actua, 60–120Hz, hasta 3000 nits (pico)"
-   ],
-   [
-    "Procesador",
-    "Google Tensor G4 + Titan M2"
-   ],
-   [
-    "Memoria",
-    "8GB RAM + 128GB"
-   ],
-   [
-    "Batería",
-    "5,100 mAh típica · carga rápida 45W · inalámbrica Qi"
-   ],
-   [
-    "Cámara trasera",
-    "48MP principal + 13MP ultra gran angular"
-   ],
-   [
-    "Cámara frontal",
-    "13MP"
-   ],
-   [
-    "Resistencia",
-    "IP68 · Gorilla Glass 7i"
-   ],
-   [
-    "Conectividad",
-    "Wi-Fi 6E, NFC, Nano SIM + eSIM, USB-C 3.2"
-   ],
-   [
-    "Sistema",
-    "Android 16 · 7 años de actualizaciones"
-   ]
-  ],
-  "colors": [
-   {
-    "name": "Fog",
-    "hex": "#cfe0d4",
-    "imgs": [
-     "img/productos/google-pixel-10a-fog-1.webp",
-     "img/productos/google-pixel-10a-fog-3.webp",
-     "img/productos/google-pixel-10a-fog-2.webp"
-    ]
-   },
-   {
-    "name": "Obsidian",
-    "hex": "#2a2c30",
-    "imgs": [
-     "img/productos/google-pixel-10a-obsidian-1.webp",
-     "img/productos/google-pixel-10a-obsidian-3.webp"
-    ]
-   }
-  ]
- },
- {
-  "brand": "Nothing",
-  "name": "Nothing Phone (4a)",
-  "variant": "256GB",
-  "specs": [
-   [
-    "ID de modelo",
-    "A069"
-   ],
-   [
-    "Dimensiones",
-    "163.9 × 77.5 × 8.5 mm"
-   ],
-   [
-    "Peso",
-    "205 g"
-   ],
-   [
-    "Procesador",
-    "Qualcomm Snapdragon 7s Gen 4 (4 nm) · GPU Adreno 810"
-   ],
-   [
-    "Memoria",
-    "256GB (versiones de 8GB o 12GB de RAM según disponibilidad)"
-   ],
-   [
-    "Colores del modelo",
-    "Blanco, Negro, Azul y Rosa"
-   ]
-  ],
-  "colors": [
-   {
-    "name": "Azul",
-    "hex": "#2b8fb5",
-    "imgs": [
-     "img/productos/nothing-phone-4a-blue-1.webp",
-     "img/productos/nothing-phone-4a-blue-2.webp",
-     "img/productos/nothing-phone-4a-blue-3.webp",
-     "img/productos/nothing-phone-4a-blue-4.webp"
-    ]
-   }
-  ]
- },
- {
-  "brand": "OnePlus",
-  "name": "OnePlus 15",
-  "variant": "16GB RAM + 512GB",
-  "specs": [
-   [
-    "ID de modelo",
-    "CPH2749"
-   ],
-   [
-    "Pantalla",
-    "6.78\" 2772×1272, 1–120Hz (165Hz en juegos), 1800 nits"
-   ],
-   [
-    "Procesador",
-    "Snapdragon 8 Elite Gen 5"
-   ],
-   [
-    "Memoria",
-    "16GB LPDDR5X + 512GB UFS 4.1"
-   ],
-   [
-    "Batería",
-    "7,300 mAh · carga 120W SUPERVOOC / 50W AIRVOOC"
-   ],
-   [
-    "Cámara trasera",
-    "50MP principal + 50MP teleobjetivo 3.5x + 50MP ultra gran angular"
-   ],
-   [
-    "Cámara frontal",
-    "32MP"
-   ],
-   [
-    "Sistema",
-    "OxygenOS 16 (Android 16)"
-   ],
-   [
-    "Conectividad",
-    "5G, Wi-Fi 7, Bluetooth 6.0, NFC, eSIM, USB 3.2"
-   ]
-  ],
-  "colors": [
-   {
-    "name": "Negro",
-    "hex": "#1b1b1f",
-    "imgs": [
-     "img/productos/oneplus-15-negro-1.webp",
-     "img/productos/oneplus-15-negro-3.webp",
-     "img/productos/oneplus-15-negro-2.webp"
-    ]
-   },
-   {
-    "name": "Sand Storm",
-    "hex": "#d9c9b8",
-    "imgs": [
-     "img/productos/oneplus-15-sand-storm-1.webp",
-     "img/productos/oneplus-15-sand-storm-2.webp",
-     "img/productos/oneplus-15-sand-storm-3.webp"
-    ]
-   }
-  ]
- },
- {
-  "brand": "RedMagic",
-  "name": "RedMagic 11S Pro",
-  "variant": "512GB",
-  "specs": [
-   [
-    "ID de modelo",
-    "NX809J"
-   ],
-   [
-    "Pantalla",
-    "AMOLED 2688×1216, 1800 nits, 100% DCI-P3"
-   ],
-   [
-    "Procesador",
-    "Snapdragon 8 Elite Gen 5 Leading Version + RedCore R4"
-   ],
-   [
-    "Memoria",
-    "RAM de 12GB o 16GB LPDDR5X + 512GB UFS 4.1"
-   ],
-   [
-    "Enfriamiento",
-    "Sistema AquaCore con ventilador turbo de 24,000 RPM"
-   ],
-   [
-    "Batería",
-    "7,500 mAh · carga 80W por cable e inalámbrica"
-   ],
-   [
-    "Cámara trasera",
-    "50MP + 50MP + 2MP con OIS"
-   ],
-   [
-    "Cámara frontal",
-    "16MP"
-   ],
-   [
-    "Gaming",
-    "Gatillos laterales 520Hz, luces RGB, tecla Magic Key"
-   ],
-   [
-    "Conectividad",
-    "5G, Wi-Fi 6, Bluetooth 5.4, NFC, Dual nano-SIM (sin eSIM), jack 3.5mm"
-   ],
-   [
-    "Sistema",
-    "REDMAGIC OS 11.5 (Android 16)"
-   ]
-  ],
-  "colors": [
-   {
-    "name": "Nightfreeze",
-    "hex": "#1c2230",
-    "imgs": [
-     "img/productos/redmagic-11s-pro-nightfreeze-1.webp",
-     "img/productos/redmagic-11s-pro-nightfreeze-3.webp",
-     "img/productos/redmagic-11s-pro-nightfreeze-2.webp"
-    ]
-   }
-  ]
- },
- {
-  "brand": "Sony",
-  "name": "Sony Xperia 1 VIII",
-  "variant": "12GB RAM + 256GB",
-  "specs": [
-   [
-    "ID de modelo",
-    "XQ-GE74"
-   ],
-   [
-    "Pantalla",
-    "6.5\" FHD+ HDR OLED (1080×2340), 120Hz"
-   ],
-   [
-    "Dimensiones y peso",
-    "162 × 74 × 8.3 mm · 200 g"
-   ],
-   [
-    "Procesador",
-    "Snapdragon 8 Elite Gen 5"
-   ],
-   [
-    "Memoria",
-    "12GB RAM + 256GB UFS · microSD hasta 2TB"
-   ],
-   [
-    "Batería",
-    "5,000 mAh · USB PD y carga inalámbrica Qi"
-   ],
-   [
-    "Cámara trasera",
-    "Triple lente ZEISS: 52MP (24 mm) + 48MP teleobjetivo (70 mm) + 48MP ultra gran angular (16 mm)"
-   ],
-   [
-    "Cámara frontal",
-    "12MP"
-   ],
-   [
-    "Resistencia",
-    "IP6X contra polvo · Gorilla Glass Victus 2"
-   ],
-   [
-    "Conectividad",
-    "5G, Bluetooth 6.0, NFC, Dual SIM (nanoSIM + eSIM), USB 3.2, jack 3.5mm"
-   ],
-   [
-    "Sistema",
-    "Android 16"
-   ]
-  ],
-  "colors": [
-   {
-    "name": "Negro",
-    "hex": "#1b1b1f",
-    "imgs": [
-     "img/productos/sony-xperia-1-viii-black-1.webp",
-     "img/productos/sony-xperia-1-viii-black-3.webp"
-    ]
-   },
-   {
-    "name": "Plata",
-    "hex": "#b9b8c6",
-    "imgs": [
-     "img/productos/sony-xperia-1-viii-silver-1.webp",
-     "img/productos/sony-xperia-1-viii-silver-2.webp",
-     "img/productos/sony-xperia-1-viii-silver-3.webp",
-     "img/productos/sony-xperia-1-viii-silver-4.webp"
-    ]
-   }
-  ]
- }
-];
-
-const norm = t => t.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
-let fBrand = "Todas", fText = "";
-const sel = {}; /* color elegido por producto */
-
-function waLink(p,c){
-  const msg = `Hola HPhones, quisiera cotizar el ${p.name} ${p.variant} (${c.name}). ¿Me pueden dar precio y disponibilidad?`;
-  return "https://wa.me/"+CONFIG.whatsapp.replace(/\D/g,"")+"?text="+encodeURIComponent(msg);
-}
-function renderChips(){
-  const n = b => PRODUCTS.filter(p=>b==="Todas"||p.brand===b).length;
-  $("chips").innerHTML = ["Todas",...BRANDS.map(b=>b.name)].map(b=>
-    `<button class="chip ${b===fBrand?"on":""}" data-b="${b}">${b}<small>${n(b)}</small></button>`).join("");
-}
-function renderGrid(){
-  const q = norm(fText.trim());
-  const list = PRODUCTS.map((p,i)=>({p,i})).filter(({p})=>
-    (fBrand==="Todas"||p.brand===fBrand) && (!q || norm(p.brand+" "+p.name+" "+p.variant+" "+p.colors.map(c=>c.name).join(" ")).includes(q)));
-  $("pGrid").innerHTML = list.length ? list.map(({p,i})=>{
-    const ci = sel[i]||0, c = p.colors[ci];
-    return `<article class="p-card">
-      <button class="p-img" data-open="${i}" aria-label="Ver detalles de ${p.name}"><img src="${c.imgs[0]}" alt="${p.name} ${c.name}" loading="lazy"></button>
-      <div class="p-body">
-        <span class="p-brand">${p.brand}</span>
-        <h3 class="p-name">${p.name}</h3>
-        <p class="p-sub">${p.variant}</p>
-        <div class="sw">${p.colors.map((k,j)=>`<button class="${j===ci?"on":""}" style="background:${k.hex}" title="${k.name}" data-color="${i}:${j}" aria-label="${k.name}"></button>`).join("")}<span>${c.name}</span></div>
-        <button class="p-more" data-open="${i}">Ver fotos y especificaciones →</button>
-        <a class="btn" href="${waLink(p,c)}" target="_blank" rel="noopener">💬 Cotizar por WhatsApp</a>
-      </div></article>`;}).join("")
-  : `<p class="empty">${fBrand!=="Todas"&&!q?`Pronto agregaremos equipos ${fBrand}. Escríbenos y te cotizamos el que necesites.`:"No encontramos equipos con esa búsqueda. Escríbenos y te ayudamos a conseguirlo."}</p>`;
-}
-$("chips").onclick = e => { const b=e.target.closest(".chip"); if(!b) return; fBrand=b.dataset.b; renderChips(); renderGrid(); };
-$("q").oninput = e => { fText=e.target.value; renderGrid(); };
-$("pGrid").onclick = e => {
-  const k=e.target.closest("[data-color]"); if(k){ const [i,j]=k.dataset.color.split(":"); sel[i]=+j; renderGrid(); return; }
-  const o=e.target.closest("[data-open]"); if(o) openModal(+o.dataset.open);
-};
-document.getElementById("brandGrid").onclick = e => {
-  const c=e.target.closest(".brand-card"); if(!c) return;
-  fBrand=c.title; renderChips(); renderGrid(); $("catalogo").scrollIntoView({behavior:"smooth"});
-};
-function openModal(i){
-  const p=PRODUCTS[i], c=p.colors[sel[i]||0];
-  $("mBrand").textContent=p.brand; $("mName").textContent=p.name+" · "+p.variant+" · "+c.name;
-  $("mSpecs").innerHTML=p.specs.map(([a,b])=>`<li><b>${a}:</b> ${b}</li>`).join("");
-  $("mWa").href=waLink(p,c);
-  const set=src=>{ $("mMain").src=src; $("mTh").querySelectorAll("img").forEach(t=>t.classList.toggle("on",t.dataset.src===src)); };
-  $("mTh").innerHTML=c.imgs.map(s=>`<img src="${s}" data-src="${s}" alt="">`).join("");
-  $("mTh").onclick=e=>{ if(e.target.dataset.src) set(e.target.dataset.src); };
-  set(c.imgs[0]); $("modal").classList.add("open");
-}
-const closeModal=()=>$("modal").classList.remove("open");
-$("mx").onclick=closeModal; $("modal").onclick=e=>{ if(e.target.id==="modal") closeModal(); };
-document.addEventListener("keydown",e=>{ if(e.key==="Escape") closeModal(); });
-renderChips(); renderGrid();
-
-$("yr").textContent = new Date().getFullYear();
-$("burger").onclick = () => $("menu").classList.toggle("open");
-document.querySelectorAll("#menu a").forEach(a => a.onclick = () => $("menu").classList.remove("open"));
-</script>
 </body>
 </html>
