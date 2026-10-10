@@ -1,599 +1,174 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soluciones M & R | Movilidad & Tecnología</title>
-    
-    <!-- Favicon e Íconos corporativos -->
-    <link rel="icon" type="image/svg+xml" href="logo-icono (1).svg">
-    <link rel="apple-touch-icon" href="logo-icono-192.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Soluciones M & R S.A.S. | Celulares y tecnología en Bogotá</title>
+<meta name="description" content="Distribución mayorista y al detal de celulares, tablets y accesorios de Google, Sony, OnePlus, Nothing, Nubia (Redmagic) y Xiaomi en Bogotá, Colombia.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F3F5F9;--surface:#fff;--ink:#0E1B2C;--muted:#4C5B70;--line:#D9DEE8;--blue:#1F4FFF;--blue-ink:#fff;--amber:#FFB020;--hero:#0E1B2C;--hero-ink:#fff;
+--head:'Sora',system-ui,sans-serif;--body:'DM Sans',system-ui,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0A121D;--surface:#122033;--ink:#EAF0F8;--muted:#9AA9BE;--line:#233650;--blue:#5B82FF;--blue-ink:#07101D;--hero:#122033}}
+:root[data-theme="dark"]{--bg:#0A121D;--surface:#122033;--ink:#EAF0F8;--muted:#9AA9BE;--line:#233650;--blue:#5B82FF;--blue-ink:#07101D;--hero:#122033}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--body)}
+h1,h2,h3{font-family:var(--head);line-height:1.1;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;font:800 20px var(--head);text-decoration:none;letter-spacing:-.02em}.logo svg{width:38px;height:38px;flex:none}
+.logo b{color:var(--blue)}
+nav{display:flex;gap:6px;align-items:center}
+nav a{text-decoration:none;font-weight:500;font-size:15px;padding:8px 12px;border-radius:99px}
+nav a:hover{background:var(--surface)}
+nav .cta{background:var(--blue);color:var(--blue-ink);font-weight:700}
+@media(max-width:620px){nav a:not(.cta){display:none}}
+.hero{background:var(--hero);color:var(--hero-ink);padding:72px 0 80px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center}
+.hero h1{font-weight:800;font-size:clamp(2.3rem,6.4vw,4.4rem);letter-spacing:-.035em}
+.hero p{font-size:1.15rem;color:#C5D0E2;max-width:34em;margin:22px 0 30px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 24px;border-radius:12px;font-weight:700;text-decoration:none;border:2px solid transparent}
+.btn.p{background:var(--amber);color:#1A1200}
+.btn.s{border-color:#3A4D6B;color:#fff}
+.btn:hover{filter:brightness(1.08)}
 
-    <!-- Tipografía Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <style>
-        :root {
-            --azul-marino: #162E58;
-            --azul-profundo: #0C1A33;
-            --cyan-acento: #00A7C4;
-            --cyan-hover: #0088A1;
-            --fondo-pagina: #F8FAFC;
-            --fondo-tarjeta: #FFFFFF;
-            --texto-principal: #0F172A;
-            --texto-secundario: #475569;
-            --borde-suave: #E2E8F0;
-            --sombra-card: 0 15px 35px -5px rgba(22, 46, 88, 0.08);
-            --sombra-hover: 0 25px 45px -10px rgba(0, 167, 196, 0.18);
-        }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            scroll-behavior: smooth;
-        }
 
-        h1, h2, h3, .heading-font {
-            font-family: 'Outfit', sans-serif;
-        }
 
-        body {
-            background-color: var(--fondo-pagina);
-            color: var(--texto-principal);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
 
-        /* --- Encabezado --- */
-        header {
-            background: rgba(255, 255, 255, 0.92);
-            backdrop-filter: blur(12px);
-            border-bottom: 1px solid var(--borde-suave);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
 
-        .nav-container {
-            max-width: 1280px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 12px 24px;
-        }
-
-        .brand-header-link {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            text-decoration: none;
-        }
-
-        /* Utiliza logo-icono (1).svg en tamaño destacado */
-        .brand-logo-icon {
-            height: 75px;
-            width: auto;
-            display: block;
-        }
-
-        .brand-header-text {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .brand-header-text .title {
-            font-family: 'Outfit', sans-serif;
-            font-size: 24px;
-            font-weight: 800;
-            color: var(--azul-marino);
-            line-height: 1;
-        }
-
-        .brand-header-text .subtitle {
-            font-size: 12px;
-            font-weight: 700;
-            color: var(--cyan-acento);
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            margin-top: 4px;
-        }
-
-        .nav-menu {
-            display: flex;
-            list-style: none;
-            gap: 36px;
-            align-items: center;
-        }
-
-        .nav-menu a {
-            text-decoration: none;
-            color: var(--texto-secundario);
-            font-weight: 600;
-            font-size: 15px;
-            transition: color 0.2s;
-        }
-
-        .nav-menu a:hover {
-            color: var(--cyan-acento);
-        }
-
-        .btn-header-cta {
-            background-color: var(--azul-marino);
-            color: #FFFFFF !important;
-            padding: 12px 26px;
-            border-radius: 50px;
-            font-weight: 700;
-            transition: all 0.3s ease;
-        }
-
-        .btn-header-cta:hover {
-            background-color: var(--cyan-acento);
-            transform: translateY(-2px);
-        }
-
-        /* --- Hero Section --- */
-        .hero {
-            padding: 180px 24px 100px 24px;
-            max-width: 1280px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1.2fr 0.8fr;
-            gap: 60px;
-            align-items: center;
-        }
-
-        .badge-hero {
-            background-color: rgba(0, 167, 196, 0.1);
-            border: 1px solid var(--cyan-acento);
-            color: var(--cyan-acento);
-            padding: 8px 20px;
-            border-radius: 50px;
-            font-size: 13px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            display: inline-block;
-            margin-bottom: 24px;
-        }
-
-        .hero h1 {
-            font-size: 56px;
-            line-height: 1.1;
-            color: var(--azul-marino);
-            margin-bottom: 24px;
-            font-weight: 800;
-        }
-
-        .hero p {
-            font-size: 20px;
-            color: var(--texto-secundario);
-            margin-bottom: 36px;
-        }
-
-        .btn-primary {
-            background-color: var(--cyan-acento);
-            color: #FFFFFF;
-            padding: 18px 40px;
-            border-radius: 14px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 16px;
-            display: inline-block;
-            box-shadow: 0 10px 25px rgba(0, 167, 196, 0.3);
-            transition: all 0.3s ease;
-        }
-
-        .btn-primary:hover {
-            background-color: var(--cyan-hover);
-            transform: translateY(-3px);
-            box-shadow: 0 15px 30px rgba(0, 167, 196, 0.4);
-        }
-
-        .hero-image-card {
-            background: var(--fondo-tarjeta);
-            border: 1px solid var(--borde-suave);
-            border-radius: 32px;
-            padding: 50px;
-            text-align: center;
-            box-shadow: var(--sombra-card);
-        }
-
-        .hero-image-card img {
-            width: 200px;
-            height: auto;
-            margin-bottom: 20px;
-        }
-
-        /* --- Servicios --- */
-        .services-section {
-            padding: 100px 24px;
-            max-width: 1280px;
-            margin: 0 auto;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .section-tag {
-            color: var(--cyan-acento);
-            font-weight: 700;
-            font-size: 13px;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-        }
-
-        .section-title {
-            font-size: 40px;
-            color: var(--azul-marino);
-            font-weight: 800;
-            margin-top: 8px;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-            gap: 32px;
-        }
-
-        .service-card {
-            background: var(--fondo-tarjeta);
-            border: 1px solid var(--borde-suave);
-            border-radius: 24px;
-            padding: 40px;
-            box-shadow: var(--sombra-card);
-            transition: all 0.3s ease;
-        }
-
-        .service-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--sombra-hover);
-            border-color: var(--cyan-acento);
-        }
-
-        .service-number {
-            font-family: 'Outfit', sans-serif;
-            font-size: 32px;
-            font-weight: 800;
-            color: var(--cyan-acento);
-            margin-bottom: 16px;
-        }
-
-        .service-card h3 {
-            font-size: 24px;
-            color: var(--azul-marino);
-            margin-bottom: 12px;
-        }
-
-        .service-card p {
-            color: var(--texto-secundario);
-            font-size: 16px;
-        }
-
-        /* --- Sección de Marcas (Diseño Agrandado) --- */
-        .brands-section {
-            background-color: #FFFFFF;
-            padding: 90px 24px;
-            border-top: 1px solid var(--borde-suave);
-            border-bottom: 1px solid var(--borde-suave);
-        }
-
-        .brands-grid {
-            max-width: 1280px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 32px;
-            padding-top: 30px;
-        }
-
-        /* Tarjeta de marca con mayor tamaño */
-        .brand-card {
-            background: var(--fondo-pagina);
-            border: 1px solid var(--borde-suave);
-            border-radius: 20px;
-            width: 220px;
-            height: 120px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
-            transition: all 0.3s ease;
-        }
-
-        .brand-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
-            border-color: var(--cyan-acento);
-            background: #FFFFFF;
-        }
-
-        .brand-card img {
-            max-height: 75px; /* Tamaño significativamente agrandado */
-            max-width: 160px;
-            object-fit: contain;
-        }
-
-        /* --- Contacto --- */
-        .contact-section {
-            padding: 100px 24px;
-            max-width: 1280px;
-            margin: 0 auto;
-        }
-
-        .contact-card {
-            background: linear-gradient(135deg, var(--azul-marino) 0%, var(--azul-profundo) 100%);
-            border-radius: 32px;
-            padding: 60px;
-            color: #FFFFFF;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            box-shadow: 0 25px 50px rgba(22, 46, 88, 0.25);
-        }
-
-        .contact-info h2 {
-            font-size: 42px;
-            margin-bottom: 20px;
-        }
-
-        .contact-info p {
-            color: #94A3B8;
-            font-size: 18px;
-            margin-bottom: 36px;
-        }
-
-        .email-display-box {
-            background: rgba(255, 255, 255, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            border-radius: 16px;
-            padding: 24px;
-            margin-bottom: 24px;
-        }
-
-        .email-display-box span {
-            display: block;
-            font-size: 12px;
-            color: var(--cyan-acento);
-            text-transform: uppercase;
-            font-weight: 700;
-            letter-spacing: 1px;
-            margin-bottom: 6px;
-        }
-
-        .email-display-box a {
-            font-size: 22px;
-            color: #FFFFFF;
-            font-weight: 700;
-            text-decoration: none;
-            word-break: break-all;
-            transition: color 0.2s;
-        }
-
-        .email-display-box a:hover {
-            color: var(--cyan-acento);
-        }
-
-        .form-card {
-            background: #FFFFFF;
-            border-radius: 24px;
-            padding: 40px;
-            color: var(--texto-principal);
-        }
-
-        .form-card h3 {
-            font-size: 24px;
-            color: var(--azul-marino);
-            margin-bottom: 20px;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            font-size: 14px;
-            font-weight: 700;
-            color: var(--azul-marino);
-            margin-bottom: 8px;
-        }
-
-        .form-group input, .form-group textarea {
-            width: 100%;
-            padding: 16px;
-            border: 1px solid var(--borde-suave);
-            border-radius: 12px;
-            font-size: 15px;
-            outline: none;
-            transition: border-color 0.2s;
-        }
-
-        .form-group input:focus, .form-group textarea:focus {
-            border-color: var(--cyan-acento);
-        }
-
-        .btn-submit {
-            width: 100%;
-            background-color: var(--cyan-acento);
-            color: #FFFFFF;
-            border: none;
-            padding: 18px;
-            border-radius: 12px;
-            font-size: 16px;
-            font-weight: 700;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-
-        .btn-submit:hover {
-            background-color: var(--cyan-hover);
-        }
-
-        footer {
-            text-align: center;
-            padding: 40px 24px;
-            background: #FFFFFF;
-            border-top: 1px solid var(--borde-suave);
-            color: var(--texto-secundario);
-            font-size: 14px;
-        }
-
-        @media (max-width: 968px) {
-            .hero, .contact-card { grid-template-columns: 1fr; }
-            .hero h1 { font-size: 38px; }
-            .brand-logo-icon { height: 55px; }
-            .brand-header-text .title { font-size: 18px; }
-            .nav-menu { display: none; }
-            .brand-card { width: 160px; height: 90px; }
-            .brand-card img { max-height: 50px; max-width: 120px; }
-        }
-    </style>
+@media(max-width:820px){.hero .wrap{grid-template-columns:1fr}}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-bottom:1px solid var(--line);background:var(--surface)}
+.facts div{padding:22px;border-right:1px solid var(--line)}
+.facts div:last-child{border:0}
+.facts strong{display:block;font:700 16px var(--head)}
+.facts span{color:var(--muted);font-size:15px}
+@media(max-width:700px){.facts{grid-template-columns:1fr}.facts div{border-right:0;border-bottom:1px solid var(--line)}}
+.banner{display:grid;grid-template-columns:1fr 1.15fr;gap:20px;align-items:center;margin:56px 0 0;border-radius:24px;padding:40px 36px;color:#fff;background:linear-gradient(135deg,#16294A,#0E1B2C);border:1px solid #233650}.banner h2{color:#fff;margin:0 0 10px;font-size:clamp(1.6rem,3.4vw,2.3rem)}.banner p{margin:0;color:#C5D0E2}.bsvg{width:100%;height:auto;display:block}.route{width:100%;max-width:430px;justify-self:center}.route svg{width:100%;height:auto;display:block}.flow{animation:flow 2.4s linear infinite}@keyframes flow{to{stroke-dashoffset:-24}}@media(max-width:820px){.banner{grid-template-columns:1fr;padding:30px 22px}}@media(prefers-reduced-motion:reduce){.flow{animation:none}}
+section{padding:84px 0}
+h2{font-size:clamp(1.8rem,4vw,2.7rem);letter-spacing:-.03em;margin-bottom:14px}
+.lead{color:var(--muted);max-width:40em;margin:0 0 40px}
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:28px}
+.card.hl{background:var(--blue);color:var(--blue-ink);border-color:var(--blue)}
+.card h3{font-size:1.3rem;margin-bottom:10px}
+.card p{margin:0;color:var(--muted)}
+.card.hl p{color:inherit;opacity:.92}
+.card ul{margin:16px 0 0;padding-left:18px;color:var(--muted);font-size:15px}
+.card.hl ul{color:inherit}
+@media(max-width:820px){.svc{grid-template-columns:1fr}}
+.brands{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.brands div{background:#fff;border:1px solid var(--line);border-radius:14px;height:116px;padding:18px;display:flex;align-items:center;justify-content:center}.brands img{max-width:100%;max-height:70px;width:auto;height:auto;object-fit:contain}
+@media(max-width:620px){.brands{grid-template-columns:repeat(2,1fr)}}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+@media(max-width:820px){.contact{grid-template-columns:1fr}}
+dl{margin:0}
+dt{font-weight:700;margin-top:18px}
+dd{margin:2px 0 0;color:var(--muted)}
+form{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px;display:grid;gap:14px}
+label{font-weight:500;font-size:15px;display:grid;gap:6px}
+input,select,textarea{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px;width:100%}
+textarea{min-height:110px;resize:vertical}
+form button{font:700 17px var(--body);background:var(--blue);color:var(--blue-ink);border:0;border-radius:12px;padding:14px;cursor:pointer}
+form button:hover{filter:brightness(1.08)}
+.note{font-size:14px;color:var(--muted);margin:0}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
 </head>
 <body>
+<header><div class="wrap nav">
+<a class="logo" href="#inicio" aria-label="Soluciones M&R, inicio"><svg viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#1F4FFF"/><rect x="15" y="7" width="18" height="34" rx="5" fill="none" stroke="#fff" stroke-width="2.5"/><path d="M19 33V19l5 7 5-7v14" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="37" cy="11" r="4" fill="#FFB020"/></svg><span>Soluciones <b>M&amp;R</b></span></a>
+<nav aria-label="Principal"><a href="#servicios">Servicios</a><a href="#marcas">Marcas</a><a href="#contacto" class="cta">Cotizar</a></nav>
+</div></header>
 
-    <!-- Encabezado con Isotipo 'logo-icono (1).svg' -->
-    <header>
-        <div class="nav-container">
-            <a href="#inicio" class="brand-header-link">
-                <img src="logo-icono (1).svg" alt="Soluciones M & R" class="brand-logo-icon">
-                <div class="brand-header-text">
-                    <span class="title">Soluciones M & R</span>
-                    <span class="subtitle">Tecnología & Celulares</span>
-                </div>
-            </a>
-            <ul class="nav-menu">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#marcas">Marcas</a></li>
-                <li><a href="#contacto" class="btn-header-cta">Contacto</a></li>
-            </ul>
-        </div>
-    </header>
+<main id="inicio">
+<div class="hero"><div class="wrap">
+<div>
+<h1>Tecnología móvil para tu negocio y para ti.</h1>
+<p>Distribuimos celulares, tablets y accesorios de marcas líderes, al por mayor y al detal, desde Bogotá.</p>
+<div class="btns"><a class="btn p" href="#contacto">Pedir cotización</a><a class="btn s" href="#marcas">Ver marcas</a></div>
+</div>
+<div class="route" aria-hidden="true"><svg viewBox="0 0 360 340" fill="none">
+<g stroke="#3A4D6B" stroke-width="2"><circle cx="180" cy="115" r="78"/><ellipse cx="180" cy="115" rx="36" ry="78"/><path d="M180 37v156M102 115h156M108 85Q180 100 252 85M108 145Q180 160 252 145"/></g>
+<ellipse class="flow" cx="180" cy="115" rx="130" ry="34" transform="rotate(-20 180 115)" stroke="#FFB020" stroke-width="2.5" stroke-dasharray="6 6" stroke-linecap="round"/>
+<g transform="translate(266 60) rotate(20)"><circle r="17" fill="#0E1B2C" stroke="#FFB020" stroke-width="2"/><path d="M-9 2L9-8 4 9 0 3Z M9-8L0 3" stroke="#fff" stroke-width="2" stroke-linejoin="round"/></g>
+<path d="M16 292H344" stroke="#3A4D6B" stroke-width="2" stroke-linecap="round"/>
+<g stroke="#fff" stroke-width="2.5" stroke-linejoin="round"><rect x="40" y="236" width="82" height="40" rx="3"/><path d="M122 248h26l16 16v12h-42z"/><path d="M130 252h14l9 10h-23z" stroke-width="2"/><circle cx="64" cy="284" r="9" fill="#0E1B2C"/><circle cx="146" cy="284" r="9" fill="#0E1B2C"/></g>
+<rect x="68" y="247" width="14" height="22" rx="3" stroke="#FFB020" stroke-width="2"/>
+<g stroke="#FFB020" stroke-width="2.5" stroke-linejoin="round"><path d="M275 218l34 17v34l-34 17-34-17v-34z" fill="#FFB020" fill-opacity=".12"/><path d="M241 235l34 17 34-17M275 252v34"/></g>
+</svg></div>
+</div></div>
 
-    <!-- Hero -->
-    <section id="inicio" class="hero">
-        <div>
-            <span class="badge-hero">Trayectoria Corporativa Desde 2011</span>
-            <h1>Distribución Tecnológica de Alta Gama</h1>
-            <p>Especialistas en la importación y comercialización de smartphones, tablets y movilidad avanzada en Colombia.</p>
-            <a href="#contacto" class="btn-primary">Solicitar Cotización</a>
-        </div>
+<div class="facts">
+<div><strong>Mayoristas y consumidor final</strong><span>Un solo proveedor para ambos</span></div>
+<div><strong>Gama alta</strong><span>Últimos lanzamientos disponibles</span></div>
+<div><strong>Bogotá D.C.</strong><span>Atendemos desde la capital</span></div>
+</div>
 
-        <div class="hero-image-card">
-            <img src="logo-icono (1).svg" alt="Soluciones M & R Logo">
-            <h3 style="font-size: 22px; color: var(--azul-marino);">Soluciones M & R</h3>
-            <p style="font-size: 14px; color: var(--texto-secundario);">Importación y Distribución Oficial</p>
-        </div>
-    </section>
+<div class="wrap"><div class="banner"><div class="bt"><h2>Del fabricante a tus manos</h2><p>Stock de marcas líderes, con garantía y asesoría, para tu negocio o para ti.</p></div><svg class="bsvg" viewBox="0 0 520 120" role="img" aria-label="Transporte aéreo, camión y paquete entregado" fill="none"><path d="M90 60H230M290 60H430" stroke="#FFB020" stroke-width="2" stroke-dasharray="6 6" stroke-linecap="round"/><path d="M224 53l8 7-8 7M424 53l8 7-8 7" stroke="#FFB020" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="60" cy="60" r="26" fill="#0E1B2C" stroke="#3A4D6B" stroke-width="2"/><g stroke="#fff" stroke-width="2" stroke-linejoin="round"><path d="M46 62L74 46 66 74 61 63Z M74 46L61 63"/></g><circle cx="260" cy="60" r="26" fill="#0E1B2C" stroke="#3A4D6B" stroke-width="2"/><g stroke="#fff" stroke-width="2" stroke-linejoin="round"><path d="M245 49h18v17h-18z M263 54h7l5 6v6h-12z"/><circle cx="252" cy="68" r="3.5" fill="#0E1B2C"/><circle cx="269" cy="68" r="3.5" fill="#0E1B2C"/></g><circle cx="460" cy="60" r="26" fill="#0E1B2C" stroke="#FFB020" stroke-width="2"/><g stroke="#fff" stroke-width="2" stroke-linejoin="round"><path d="M460 46l12 7v14l-12 7-12-7V53z M448 53l12 7 12-7 M460 60v14"/></g></svg></div></div>
+<section id="servicios"><div class="wrap">
+<h2>Qué hacemos</h2>
+<p class="lead">Dos formas de comprar, un mismo catálogo y la misma asesoría.</p>
+<div class="svc">
+<article class="card hl"><h3>Venta al por mayor</h3><p>Abastece tu tienda con precios competitivos por volumen.</p><ul><li>Catálogo amplio</li><li>Precios por volumen</li><li>Stock disponible</li></ul></article>
+<article class="card"><h3>Venta al detal</h3><p>Los últimos lanzamientos del mercado móvil, con garantía y asesoría experta.</p><ul><li>Garantía incluida</li><li>Te ayudamos a elegir</li></ul></article>
+<article class="card"><h3>Dispositivos y accesorios</h3><p>Celulares de alta gama, tablets de rendimiento optimizado y los accesorios que los complementan.</p><ul><li>Celulares</li><li>Tablets</li><li>Accesorios</li></ul></article>
+</div>
+</div></section>
 
-    <!-- Servicios -->
-    <section id="servicios" class="services-section">
-        <div class="section-header">
-            <span class="section-tag">Portafolio</span>
-            <h2 class="section-title">Nuestros Servicios</h2>
-        </div>
+<section id="marcas" style="padding-top:0"><div class="wrap">
+<h2>Marcas disponibles</h2>
+<p class="lead">Trabajamos con fabricantes líderes en innovación móvil.</p>
+<div class="brands">
+<div><img src="assets/marcas/google.png" alt="Google" loading="lazy"></div>
+<div><img src="assets/marcas/sony.png" alt="Sony" loading="lazy"></div>
+<div><img src="assets/marcas/oneplus.png" alt="OnePlus" loading="lazy"></div>
+<div><img src="assets/marcas/nothing.png" alt="Nothing" loading="lazy"></div>
+<div><img src="assets/marcas/redmagic.png" alt="Nubia Redmagic" loading="lazy"></div>
+<div><img src="assets/marcas/xiaomi.png" alt="Xiaomi" loading="lazy"></div>
+</div>
+</div></section>
 
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-number">01</div>
-                <h3>Venta al por Mayor</h3>
-                <p>Provisión masiva de dispositivos tecnológicos para canal comercial y distribuidores regionales con precios altamente competitivos.</p>
-            </div>
+<section id="contacto" style="padding-top:0"><div class="wrap">
+<h2>Hablemos</h2>
+<p class="lead">Cuéntanos qué necesitas y te respondemos con disponibilidad y precios.</p>
+<div class="contact">
+<dl>
+<dt>Razón social</dt><dd>Soluciones M &amp; R S.A.S.</dd>
+<dt>Ubicación</dt><dd>Bogotá, Colombia</dd>
+<dt>Correo</dt><dd><a href="mailto:contacto@solucionesmyr.co">contacto@solucionesmyr.co</a></dd>
+</dl>
+<form id="f">
+<label>Nombre<input name="n" required autocomplete="name"></label>
+<label>Tipo de compra<select name="t"><option>Mayorista</option><option>Al detal</option></select></label>
+<label>Mensaje<textarea name="m" required placeholder="Marca, modelo y cantidad que buscas"></textarea></label>
+<button type="submit">Enviar por correo</button>
+<p class="note">Se abrirá tu aplicación de correo con el mensaje listo para enviar.</p>
+</form>
+</div>
+</div></section>
+</main>
 
-            <div class="service-card">
-                <div class="service-number">02</div>
-                <h3>Venta Corporativa y Detal</h3>
-                <p>Atención directa para renovación de equipos empresariales y consumidores finales que requieren modelos de última generación.</p>
-            </div>
+<footer><div class="wrap"><span>© 2026 Soluciones M &amp; R S.A.S.</span><span>Bogotá, Colombia</span></div></footer>
 
-            <div class="service-card">
-                <div class="service-number">03</div>
-                <h3>Dispositivos y Accesorios</h3>
-                <p>Amplio inventario de smartphones, tablets, repuestos y componentes originales indispensables para tu ecosistema tecnológico.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Marcas Aliadas con Logos Agrandados -->
-    <section id="marcas" class="brands-section">
-        <div class="section-header">
-            <span class="section-tag">Fabricantes</span>
-            <h2 class="section-title">Marcas Disponibles</h2>
-        </div>
-
-        <div class="brands-grid">
-            <div class="brand-card">
-                <img src="xiaomi.png" alt="Xiaomi">
-            </div>
-            <div class="brand-card">
-                <img src="oneplus.png" alt="OnePlus">
-            </div>
-            <div class="brand-card">
-                <img src="redmagic.png" alt="RedMagic">
-            </div>
-            <div class="brand-card">
-                <img src="nothing.png" alt="Nothing">
-            </div>
-            <div class="brand-card">
-                <img src="sony.jpg" alt="Sony">
-            </div>
-            <div class="brand-card">
-                <img src="google.png" alt="Google Pixel">
-            </div>
-        </div>
-    </section>
-
-    <!-- Contacto Exclusivo por Email -->
-    <section id="contacto" class="contact-section">
-        <div class="contact-card">
-            <div class="contact-info">
-                <h2>Contacta con nosotros</h2>
-                <p>Envíanos una solicitud detallada y te responderemos a la brevedad con la información de stock y cotización requerida.</p>
-
-                <div class="email-display-box">
-                    <span>Correo Electrónico Directo</span>
-                    <a href="mailto:contacto@solucionesmyr.co">contacto@solucionesmyr.co</a>
-                </div>
-
-                <p style="font-size: 15px; opacity: 0.8;">Atención comercial para Bogotá D.C. y envíos a todo el territorio colombiano.</p>
-            </div>
-
-            <div class="form-card">
-                <h3>Enviar Mensaje</h3>
-                <form action="mailto:contacto@solucionesmyr.co" method="POST" enctype="text/plain">
-                    <div class="form-group">
-                        <label>Nombre o Empresa</label>
-                        <input type="text" name="Nombre" placeholder="Tu nombre o empresa" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Correo Electrónico</label>
-                        <input type="email" name="Correo" placeholder="correo@ejemplo.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Mensaje o Cotización</label>
-                        <textarea name="Mensaje" rows="4" placeholder="Indica los modelos o requerimientos que necesitas..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn-submit">Enviar Correo</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Soluciones M & R — Todos los derechos reservados.</p>
-    </footer>
-
+<script>
+document.getElementById('f').addEventListener('submit',function(e){
+e.preventDefault();var d=new FormData(this);
+var s=encodeURIComponent('Cotización '+d.get('t')+' - '+d.get('n'));
+var b=encodeURIComponent('Nombre: '+d.get('n')+'\nTipo: '+d.get('t')+'\n\n'+d.get('m'));
+location.href='mailto:contacto@solucionesmyr.co?subject='+s+'&body='+b;
+});
+</script>
 </body>
 </html>
