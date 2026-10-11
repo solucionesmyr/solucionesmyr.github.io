@@ -1,1 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="512" height="512"><rect width="64" height="64" rx="14" fill="#0E1B2C"/><g fill="none" stroke="#fff" stroke-width="4.5" stroke-linejoin="miter" stroke-linecap="butt"><path d="M10 43V15L21 30L32 15V43"/><path d="M38 43V15H46A7.5 7.5 0 0 1 46 30H38M45 30L54 43"/></g><rect x="10" y="49" width="44" height="2.5" fill="#FFB020"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="64" height="64">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#18305A"/><stop offset="1" stop-color="#0A1422"/></linearGradient>
+<path id="orb" d="M31 256A225 70 0 0 1 481 256A225 70 0 0 1 31 256"/>
+</defs>
+<rect width="512" height="512" rx="112" fill="url(#bg)"/>
+<g transform="rotate(-24 256 256)"><path d="M31 256A225 70 0 0 1 481 256" fill="none" stroke="#FFB020" stroke-opacity=".5" stroke-width="12" stroke-linecap="round" stroke-dasharray="4 22"/></g>
+<circle cx="256" cy="256" r="166" fill="#0F1E35" stroke="#4A5F82" stroke-width="12"/>
+<path d="M118 340V176L184 262L250 176V340M286 340V176H340A40 40 0 0 1 340 256H286M330 256L394 340" fill="none" stroke="#fff" stroke-width="38" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="184" cy="262" r="20" fill="#FFB020"/>
+<g transform="rotate(-24 256 256)"><path d="M481 256A225 70 0 0 1 31 256" fill="none" stroke="#FFB020" stroke-width="12" stroke-linecap="round" stroke-dasharray="4 22"/>
+<circle r="24" fill="#FFB020"><animateMotion dur="6s" repeatCount="indefinite"><mpath href="#orb"/></animateMotion></circle></g>
+</svg>
