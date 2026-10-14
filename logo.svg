@@ -1,66 +1,64 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Soluciones M&amp;R">
-<title>Soluciones M&amp;R</title>
+<svg class="lg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Soluciones M&amp;R"><style>
+.lg{display:block;overflow:visible}
+.lg-badge{transform-origin:256px 256px;animation:lgPop .95s cubic-bezier(.2,.8,.2,1) var(--lgd,0s) backwards}
+.lg-ring{stroke-dasharray:1;animation:lgDraw 1.1s ease calc(var(--lgd,0s) + .15s) backwards}
+.lg-mr{stroke-dasharray:1;animation:lgDraw 1.3s ease calc(var(--lgd,0s) + .55s) backwards}
+.lg-m{transform-box:fill-box;transform-origin:center;animation:lgSw 9s ease-in-out infinite}
+.lg-flow{animation:lgFl 2.4s linear infinite}
+.lg-dots{animation:lgDt 1.6s linear infinite,lgFade .5s ease calc(var(--lgd,0s) + 1.7s) backwards}
+.lg-ping{transform-box:fill-box;transform-origin:center;animation:lgPg 2.4s ease-out calc(var(--lgd,0s) + 2s) infinite}
+.lg-glow{transform-box:fill-box;transform-origin:center;animation:lgBr 4s ease-in-out infinite}
+.lg-nd{transform-box:fill-box;transform-origin:center;animation:lgNode .55s cubic-bezier(.3,1.6,.5,1) calc(var(--lgd,0s) + 1.3s + var(--n,0s)) backwards,lgNd 2.4s ease-in-out calc(var(--lgd,0s) + 2s + var(--n,0s)) infinite}
+.lg-orb{animation:lgFade .8s ease calc(var(--lgd,0s) + 1.2s) backwards}
+.lg-shine{animation:lgShine 6.5s ease-in-out calc(var(--lgd,0s) + 2.2s) infinite}
+@keyframes lgPop{from{transform:scale(.3) rotate(-25deg);opacity:0}60%{transform:scale(1.06) rotate(3deg);opacity:1}to{transform:none}}
+@keyframes lgDraw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes lgSw{0%,100%{transform:scaleX(1)}50%{transform:scaleX(.02)}}
+@keyframes lgFl{to{stroke-dashoffset:-40}}
+@keyframes lgDt{to{stroke-dashoffset:-23}}
+@keyframes lgPg{0%{transform:scale(1);opacity:.9}100%{transform:scale(3.4);opacity:0}}
+@keyframes lgBr{0%,100%{opacity:.6;transform:scale(1)}50%{opacity:1;transform:scale(1.08)}}
+@keyframes lgNode{from{transform:scale(0)}to{transform:scale(1)}}
+@keyframes lgNd{0%,100%{transform:scale(1)}50%{transform:scale(1.25)}}
+@keyframes lgFade{from{opacity:0}to{opacity:1}}
+@keyframes lgShine{0%{transform:translateX(0)}24%,100%{transform:translateX(900px)}}
+@media (prefers-reduced-motion:reduce){.lg-badge,.lg-ring,.lg-mr,.lg-m,.lg-flow,.lg-dots,.lg-ping,.lg-glow,.lg-nd,.lg-orb,.lg-shine{animation:none}}</style>
 <defs>
-<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#18305A"/><stop offset="1" stop-color="#0A1422"/></linearGradient>
-<radialGradient id="gl" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#1F4FFF" stop-opacity=".55"/><stop offset="1" stop-color="#1F4FFF" stop-opacity="0"/></radialGradient>
-<clipPath id="gc"><circle cx="256" cy="256" r="166"/></clipPath>
-<path id="orb" d="M31 256A225 70 0 0 1 481 256A225 70 0 0 1 31 256"/>
+<linearGradient id="bgx" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#18305A"/><stop offset="1" stop-color="#0A1422"/></linearGradient>
+<radialGradient id="glx" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#1F4FFF" stop-opacity=".55"/><stop offset="1" stop-color="#1F4FFF" stop-opacity="0"/></radialGradient>
+<linearGradient id="shx" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".5"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+<clipPath id="gcx"><circle cx="256" cy="256" r="166"/></clipPath>
+<clipPath id="bdx"><rect width="512" height="512" rx="112"/></clipPath>
+<path id="orbx" d="M31 256A225 70 0 0 1 481 256A225 70 0 0 1 31 256"/>
 </defs>
-<style>
-.m{transform-box:fill-box;transform-origin:center;animation:sw 9s ease-in-out infinite}
-@keyframes sw{0%,100%{transform:scaleX(1)}50%{transform:scaleX(.02)}}
-.flow{animation:fl 2.4s linear infinite}
-@keyframes fl{to{stroke-dashoffset:-40}}
-.dots{animation:dt 1.6s linear infinite}
-@keyframes dt{to{stroke-dashoffset:-23}}
-.ping{transform-box:fill-box;transform-origin:center;animation:pg 2.4s ease-out infinite}
-@keyframes pg{0%{transform:scale(1);opacity:.9}100%{transform:scale(3.4);opacity:0}}
-.breathe{transform-box:fill-box;transform-origin:center;animation:br 4s ease-in-out infinite}
-@keyframes br{0%,100%{opacity:.6;transform:scale(1)}50%{opacity:1;transform:scale(1.08)}}
-.nd{transform-box:fill-box;transform-origin:center;animation:nd 2.4s ease-in-out infinite}
-@keyframes nd{0%,100%{transform:scale(1)}50%{transform:scale(1.25)}}
-@media (prefers-reduced-motion:reduce){.m,.flow,.dots,.ping,.breathe,.nd{animation:none}}
-</style>
-
-<rect width="512" height="512" rx="112" fill="url(#bg)"/>
-<circle class="breathe" cx="256" cy="256" r="236" fill="url(#gl)"/>
-
-<!-- órbita: mitad trasera -->
-<g transform="rotate(-24 256 256)">
-<path class="flow" d="M31 256A225 70 0 0 1 481 256" fill="none" stroke="#FFB020" stroke-opacity=".55" stroke-width="6" stroke-linecap="round" stroke-dasharray="4 16"/>
-<circle r="13" fill="#FFB020"><animateMotion dur="7s" repeatCount="indefinite"><mpath href="#orb"/></animateMotion><animate attributeName="opacity" calcMode="discrete" values="1;0" keyTimes="0;.5" dur="7s" repeatCount="indefinite"/></circle>
+<g class="lg-badge">
+<rect width="512" height="512" rx="112" fill="url(#bgx)"/>
+<rect x="3" y="3" width="506" height="506" rx="109" fill="none" stroke="#5B7BB5" stroke-opacity=".6" stroke-width="6"/>
+<circle class="lg-glow" cx="256" cy="256" r="236" fill="url(#glx)"/>
+<g class="lg-orb" transform="rotate(-24 256 256)">
+<path class="lg-flow" d="M31 256A225 70 0 0 1 481 256" fill="none" stroke="#FFB020" stroke-opacity=".55" stroke-width="6" stroke-linecap="round" stroke-dasharray="4 16"/>
+<circle r="13" fill="#FFB020"><animateMotion dur="7s" repeatCount="indefinite"><mpath href="#orbx"/></animateMotion><animate attributeName="opacity" calcMode="discrete" values="1;0" keyTimes="0;.5" dur="7s" repeatCount="indefinite"/></circle>
 </g>
-
-<!-- globo -->
-<circle cx="256" cy="256" r="166" fill="#0F1E35" stroke="#3A4D6B" stroke-width="7"/>
+<circle cx="256" cy="256" r="166" fill="#0F1E35"/>
 <circle cx="256" cy="256" r="166" fill="#1F4FFF" fill-opacity=".14"/>
-<g clip-path="url(#gc)" fill="none" stroke="#2F466B" stroke-width="5">
-<ellipse class="m" cx="256" cy="256" rx="166" ry="166" vector-effect="non-scaling-stroke"/>
-<ellipse class="m" style="animation-delay:-3s" cx="256" cy="256" rx="166" ry="166" vector-effect="non-scaling-stroke"/>
-<ellipse class="m" style="animation-delay:-6s" cx="256" cy="256" rx="166" ry="166" vector-effect="non-scaling-stroke"/>
+<g clip-path="url(#gcx)" fill="none" stroke="#2F466B" stroke-width="5">
+<ellipse class="lg-m" cx="256" cy="256" rx="166" ry="166" vector-effect="non-scaling-stroke"/>
+<ellipse class="lg-m" style="animation-delay:-3s" cx="256" cy="256" rx="166" ry="166" vector-effect="non-scaling-stroke"/>
+<ellipse class="lg-m" style="animation-delay:-6s" cx="256" cy="256" rx="166" ry="166" vector-effect="non-scaling-stroke"/>
 <path d="M90 176Q256 216 422 176M90 336Q256 376 422 336M90 256H422"/>
 </g>
-
-<!-- MR formada por rutas -->
+<circle class="lg-ring" pathLength="1" cx="256" cy="256" r="166" fill="none" stroke="#3A4D6B" stroke-width="7"/>
 <g fill="none" stroke-linecap="round" stroke-linejoin="round">
-<path d="M130 322V190L190 262L250 190V322M282 322V190H336A33 33 0 0 1 336 256H282M322 256L382 322" stroke="#fff" stroke-width="22"/>
-<path class="dots" d="M130 322V190L190 262L250 190V322M282 322V190H336A33 33 0 0 1 336 256H282M322 256L382 322" stroke="#FFB020" stroke-width="8" stroke-dasharray="1 22"/>
+<path class="lg-mr" pathLength="1" d="M118 322V190L176 262L234 190V322M294 322V190H344A33 33 0 0 1 344 256H294M332 256L394 322" stroke="#fff" stroke-width="22"/>
+<path class="lg-dots" d="M118 322V190L176 262L234 190V322M294 322V190H344A33 33 0 0 1 344 256H294M332 256L394 322" stroke="#FFB020" stroke-width="8" stroke-dasharray="1 22"/>
 </g>
-<g fill="#FFB020">
-<circle class="nd" cx="130" cy="190" r="12"/>
-<circle class="nd" style="animation-delay:-.8s" cx="250" cy="190" r="12"/>
-<circle class="nd" style="animation-delay:-1.6s" cx="130" cy="322" r="12"/>
-<circle class="nd" style="animation-delay:-.4s" cx="250" cy="322" r="12"/>
-<circle class="nd" style="animation-delay:-1.2s" cx="282" cy="190" r="12"/>
-<circle class="nd" style="animation-delay:-2s" cx="382" cy="322" r="12"/>
-<circle cx="190" cy="262" r="14"/>
+<g fill="#FFB020"><circle class="lg-nd" style="--n:0s" cx="118" cy="190" r="12"/><circle class="lg-nd" style="--n:.12s" cx="234" cy="190" r="12"/><circle class="lg-nd" style="--n:.24s" cx="118" cy="322" r="12"/><circle class="lg-nd" style="--n:.36s" cx="234" cy="322" r="12"/><circle class="lg-nd" style="--n:.48s" cx="294" cy="190" r="12"/><circle class="lg-nd" style="--n:.6s" cx="394" cy="322" r="12"/><circle class="lg-nd" style="--n:.7s" cx="176" cy="262" r="14"/></g>
+<circle class="lg-ping" cx="176" cy="262" r="14" fill="none" stroke="#FFB020" stroke-width="4"/>
+<g class="lg-orb" transform="rotate(-24 256 256)">
+<path class="lg-flow" d="M481 256A225 70 0 0 1 31 256" fill="none" stroke="#FFB020" stroke-width="6" stroke-linecap="round" stroke-dasharray="4 16"/>
+<circle r="13" fill="#FFB020"><animateMotion dur="7s" repeatCount="indefinite"><mpath href="#orbx"/></animateMotion><animate attributeName="opacity" calcMode="discrete" values="0;1" keyTimes="0;.5" dur="7s" repeatCount="indefinite"/></circle>
+<circle r="5" fill="#0E1B2C"><animateMotion dur="7s" repeatCount="indefinite"><mpath href="#orbx"/></animateMotion><animate attributeName="opacity" calcMode="discrete" values="0;1" keyTimes="0;.5" dur="7s" repeatCount="indefinite"/></circle>
 </g>
-<circle class="ping" cx="190" cy="262" r="14" fill="none" stroke="#FFB020" stroke-width="4"/>
-
-<!-- órbita: mitad delantera -->
-<g transform="rotate(-24 256 256)">
-<path class="flow" d="M481 256A225 70 0 0 1 31 256" fill="none" stroke="#FFB020" stroke-width="6" stroke-linecap="round" stroke-dasharray="4 16"/>
-<circle r="13" fill="#FFB020"><animateMotion dur="7s" repeatCount="indefinite"><mpath href="#orb"/></animateMotion><animate attributeName="opacity" calcMode="discrete" values="0;1" keyTimes="0;.5" dur="7s" repeatCount="indefinite"/></circle>
-<circle r="5" fill="#0E1B2C"><animateMotion dur="7s" repeatCount="indefinite"><mpath href="#orb"/></animateMotion><animate attributeName="opacity" calcMode="discrete" values="0;1" keyTimes="0;.5" dur="7s" repeatCount="indefinite"/></circle>
+<g clip-path="url(#bdx)"><g transform="skewX(-20)"><rect class="lg-shine" x="-300" y="0" width="150" height="512" fill="url(#shx)"/></g></g>
 </g>
 </svg>
